@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    max-width: 1024px;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: block;
+    position: relative;
+    font-family: 'Lucida Sans';
+    font-size: 200%;
+    color: black;
+    background-color: rgb(74, 159, 162);
+}
+
+main{
+    padding-top: 30px;
+}
+
+header::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+main {
+    font-family: 'Lucida Sans';
+    color: darkorange;
+    margin-top: 10px;
+}
+
+.bkd-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 2px solid rgb(141, 151, 160);
+    border-right: 2px solid rgb(141, 151, 160);
+    width: 100%;
+}
+
+.name {
+    padding-left: 5px;
+}
+
+.motto{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0px 0px 10px 10px;
+}
+
+.links {
+    float: right;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+.links a.active {
+    border-bottom: 1px solid;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.mission_statement {
+    font-size: 25px;
+}
+
+.quote {
+    font-family: fantasy;
+    color: rgb(74, 159, 162);
+    text-align: center;
+    font-size: 250%;
+    margin-top: 150px;
+    opacity: 0.6;
+}
