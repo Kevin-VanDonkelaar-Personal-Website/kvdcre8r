@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     max-width: 1024px;
+    margin: 0 auto;
 }
 
 body {
@@ -13,11 +14,7 @@ header {
     font-family: 'Lucida Sans';
     font-size: 200%;
     color: black;
-    background-color: rgb(74, 159, 162);
-}
-
-main{
-    padding-top: 30px;
+    background-color: rgb(105, 105, 105);
 }
 
 header::after {
@@ -26,34 +23,38 @@ header::after {
     content: '';
 }
 
-main {
-    font-family: 'Lucida Sans';
-    color: darkorange;
-    margin-top: 10px;
-}
-
 .bkd-img {
     position: absolute;
-    left: 0;
     top: 0;
     border-left: 2px solid rgb(141, 151, 160);
     border-right: 2px solid rgb(141, 151, 160);
     width: 100%;
 }
 
-.name {
+.motto {
     padding-left: 5px;
 }
 
-.motto{
+/* section {
+    display: flex;
+    align-items: center;
+}
+
+div {
+    width: 20%;
+} */
+
+.name {
+    font-family: Tahoma;
     text-align: center;
     font-size: 40px;
-    font-weight: 500;
-    margin: 0px 0px 10px 10px;
+    margin: 5px 0px 10px 10px;
+    /* border: 2px solid black; */
 }
 
 .links {
     float: right;
+    margin-bottom: 5px;
 }
 
 .links a {
@@ -63,7 +64,24 @@ main {
 }
 
 .links a.active {
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
+}
+
+main {
+    font-family: 'Lucida Sans';
+    color: rgb(255, 115, 0);
+    padding-top: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    height: 180px;
+    width: auto;
+    margin-right: 20px;
+    border: 2px solid;
+    padding: 3px;
 }
 
 h2 {
@@ -76,9 +94,10 @@ h2 {
 
 .quote {
     font-family: fantasy;
-    color: rgb(74, 159, 162);
+    color: dimgray;
     text-align: center;
     font-size: 250%;
     margin-top: 150px;
-    opacity: 0.6;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
 }
