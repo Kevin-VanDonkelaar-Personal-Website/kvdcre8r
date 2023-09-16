@@ -17,13 +17,11 @@ PROJECT REQUIREMENTS
         e.g., a console.log of a given string
     4. HTML/CSS/JavaScript files submitted via a GitHub repository
 TO-DO LIST
-    - add profile picture to home page
-    - make decisions on header:
-        -leave as is -or- move name to middle, motto to bottom right, and links to top left
-        -possibly adding a third page and making Name the home link
-    - figure out how to center all content
     - make commit and branch
     - add content to About and Portfolio pages
     - add description to Readme file
-    - create Javascript function
+    - research comic book fonts and components
+    - learn more about grid in css
+    - implement styling to auto adjust content for smaller screens
+    - find better sized images or figure out how to add a black box at the bottom to hide image excess.
 -->
