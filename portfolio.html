@@ -4,28 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin VanDonkelaar Bio - Portfolio</title>
+    <title>Kevin VanDonkelaar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
 </head>
 
 <body>
-    <img class="bkd-img"
-        src="https://images.pexels.com/photos/577514/pexels-photo-577514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="light bulb" style="opacity: 0.15">
     <header>
-        <span class="motto">"Learn ~ Create ~ Inspire"</span>
-        <h1 class="name">Kevin VanDonkelaar</h1>
-        <nav class="links">
+        <div class="name">
+            <h1>Kevin VanDonkelaar</h1>
+            <h2>Create ~ Develop ~ Inspire</h2>
+        </div>
+        <nav>
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
             <a class='active' href="portfolio.html">PORTFOLIO</a>
+            <a href="#" style="float:right">Link</a>
         </nav>
     </header>
-    <main>
 
+    <main>
+        <section class="leftcolumn">
+            <article style="background-color: blue;">
+                <p style="font-size: 150%">...<br>...<br>...</p>
+            </article>
+            <article style="background-color: green;">
+                <h2 style="font-size: 150%">...</h2>
+                <p style="font-size: 150%">...<br>...<br>...</p>
+            </article>
+        </section>
+        <section class="rightcolumn">
+            <article style="background-color: blue;">
+                <h2>Our Hero:</h2>
+                <img class="profile_pic" src="components/profilePic.jpg" alt="my profile pic">
+                <p>...</p>
+            </article>
+            <article style="background-color: green;">
+                <h3>Superpowers:</h3>
+                <p>...</p>
+                <p>...</p>
+                <p>...</p>
+                <p>...</p>
+            </article>
+            <article style="background-color: blue;">
+                <h3>Learn More:</h3>
+                <p>...</p>
+                <p>...</p>
+                <p>...</p>
+            </article>
+        </section>
     </main>
-    <footer class="quote">"Not all those who wander are lost" - J. R. R. Tolkien</footer>
+    <style type=text/css>
+        /* LEFT COLUMN */
+        .leftcolumn {
+            float: left;
+            width: 70%;
+        }
+
+        .lcp1 {
+            background-image: url("components/blue-splash.jpg");
+            background-color: blue;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            width: auto;
+        }
+
+        /* RIGHT COLUMN */
+        .rightcolumn {
+            float: left;
+            width: 30%;
+        }
+
+        .rcp1 {
+            background-image: url("components/profilePic.jpg");
+            background-color: blue;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+            width: auto;
+        }
+
+        .mission_statement {
+            padding-top: 20px;
+            font-size: 250%;
+        }
+
+        .profile_pic {
+            width: 280px;
+        }
+    </style>
+    <footer>
+        <h2 class="quote">"With great power, comes great responsibility." -Stan Lee</h2>
+    </footer>
+
 </body>
 
 </html>

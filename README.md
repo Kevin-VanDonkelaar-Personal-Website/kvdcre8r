@@ -22,6 +22,4 @@ TO-DO LIST
     - add description to Readme file
     - research comic book fonts and components
     - learn more about grid in css
-    - implement styling to auto adjust content for smaller screens
-    - find better sized images or figure out how to add a black box at the bottom to hide image excess.
 -->

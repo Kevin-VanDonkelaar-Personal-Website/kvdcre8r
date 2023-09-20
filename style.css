@@ -1,27 +1,39 @@
+/* IMPORTED FONTS */
+@font-face {
+    font-family: champion;
+    src: url(components/championbold.ttf);
+}
+
+@font-face {
+    font-family: spyagency;
+    src: url(components/spyagency3_2.ttf);
+}
+
+/* APPLIED TO EVERY PAGE BLOCK */
 * {
     box-sizing: border-box;
-    max-width: 1024px;
+    max-width: 1260px;
     margin: 0 auto;
-
 }
 
+/* APPLIED TO BODY AS A WHOLE */
 body {
-    background-color: black;
-    border: 2px solid rgb(255, 115, 0);
-    height: fit-content;
+    /* padding: 10px; */
+    background-color: darkblue;
+    border: 10px solid darkblue;
+    /* height: fit-content; */
 }
 
+/* HEADER */
 header {
-    display: inline-block;
-    position: fixed;
+
     width: 100%;
     top: 0;
-    margin-left: -2px;
-    font-family: 'Lucida Sans';
-    font-size: 200%;
-    color: ivory;
-    background-color: rgb(45, 45, 45);
-    border: 2px solid rgb(255, 115, 0);
+    background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
+    font-family: spyagency;
+    padding: 30px;
+    text-align: center;
+    color: darkblue;
 }
 
 header::after {
@@ -30,80 +42,104 @@ header::after {
     content: '';
 }
 
-.bkd-img {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.motto {
-    padding-left: 5px;
-}
-
 .name {
-
-    font-family: Tahoma;
-    font-display: block;
-    text-align: center;
-    font-size: 40px;
-    color: black;
-    text-shadow: -1px 0 ivory, 0 1px ivory, 1px 0 ivory, 0 -1px ivory;
+    color: darkblue;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.links {
-    float: right;
-    margin-bottom: 5px;
-}
-
-.links a {
-    text-decoration: none;
-    color: ivory;
-    margin: 5px;
-}
-
-.links a.active {
-    border-bottom: 2px solid;
-}
-
-main {
-    font-family: 'Lucida Sans';
-    color: rgb(255, 115, 0);
-}
-
-.home_content {
-    padding: 30px;
-    margin-top: 130px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 250px;
-}
-
-.profile-pic {
-    height: 180px;
-    width: auto;
-    margin-right: 20px;
-    border: 2px solid;
-    padding: 3px;
+h1 {
+    font-size: 350%;
 }
 
 h2 {
-    font-size: 40px;
+    color: darkblue;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 190%;
 }
 
-.mission_statement {
-    font-size: 25px;
-    color: ivory;
+p {
+    font-size: 150%;
 }
 
-footer {
-    position: relative;
-    font-family: fantasy;
-    width: 100%;
-    color: dimgray;
+/* NAV BAR */
+nav {
+    overflow: hidden;
+    background-color: darkblue;
+    border: 2px solid darkblue;
+    margin: 50px -20px -20px -20px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    font-size: 250%;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: goldenrod;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: darkblue;
+}
+
+nav a.active:hover {
+    color: rgb(173, 132, 28);
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+}
+
+/* MAIN CONTENT */
+main {
+    background-color: #f1f1f1;
+    font-family: champion;
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+    border: 2px solid #f1f1f1;
     margin-top: 20px;
-    margin-bottom: 20px;
-    border-top: 3px solid rgb(255, 115, 0);
-    border-bottom: 3px solid rgb(255, 115, 0);
+    /* position: relative; */
+}
+
+main::after {
+    /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article {
+    color: #f1f1f1;
+    background-image: url('components/blue-splash.jpg');
+    background-color: darkblue;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border: 2px solid #f1f1f1;
+    padding: 10px;
+    width: auto;
+
+}
+
+/* FOOTER */
+footer {
+    font-family: spyagency;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+
 }

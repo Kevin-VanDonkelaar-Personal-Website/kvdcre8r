@@ -10,30 +10,109 @@
 </head>
 
 <body>
-    <img class="bkd-img"
-        src="https://images.pexels.com/photos/6841857/pexels-photo-6841857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="globe" style="opacity: 0.2">
     <header>
-        <span class="motto">"Learn ~ Create ~ Inspire"</span>
-        <h1 class="name">Kevin VanDonkelaar</h1>
-        <nav class="links">
+        <div class="name">
+            <h1>Kevin VanDonkelaar</h1>
+            <h2>Create ~ Develop ~ Inspire</h2>
+        </div>
+        <nav>
             <a class='active' href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
             <a href="portfolio.html">PORTFOLIO</a>
+            <a href="#" style="float:right">kvdcre8r@gmail.com</a>
         </nav>
     </header>
-    <main class="home_content">
-        <img class="profile-pic"
-            src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/238606699_10220244102392709_8859304386026360772_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1b51e3&_nc_ohc=pQoFBvEC-rUAX8CJiDF&_nc_ht=scontent-ord5-2.xx&oh=00_AfDkWM-MJwZxCASctJI8hqxji7z0IWoFcZjQADw6xIgXpg&oe=6507AA07"
-            alt="my profile pic">
-        <article>
-            <h2>Mission Statement:</h2>
-            <p class="mission_statement">To stay dedicated to perpetual learning and adaptation in order to
-                create efficient and manageable web solutions, always remembering to inspire others along the way.
-            </p>
-        </article>
+
+    <main>
+        <section class="leftcolumn">
+            <article>
+                <p>Somewhere near St. Louis, Missouri...<br>this mild-mannered fullstack
+                    developer is ready to save the day,<br>one web solution at a time...</p>
+            </article>
+            <article>
+                <h2>MY MISSION:</h2>
+                <p id="mission_statement">To work with fellow tech professional superheroes to create, develop,
+                    and
+                    maintain innovative websites that go above and beyond the client's needs. </p>
+            </article>
+            <article>
+                <h2>My Toolbelt:</h2>
+                <img id="web-dev-logos" src="components/web-dev-logos.png" alt="">
+            </article>
+
+        </section>
+        <section class="rightcolumn">
+            <article id="profile_pic">
+                <h2>Your Hero:</h2>
+            </article>
+            <article id="known_aliases">
+                <h2>Known aliases:</h2>
+                <p>kvdcre8r, kvthinker, mrwordsmith, theorigin8r, cerealkiller478</p>
+            </article>
+        </section>
     </main>
-    <footer class="quote">"Not all those who wander are lost" - J. R. R. Tolkien</footer>
+
+    <footer>
+        <h2 class="quote">"With great power, comes great responsibility." -Stan Lee</h2>
+    </footer>
+
+    <style type=text/css>
+        /* css exclusive to this page */
+        .leftcolumn {
+            float: left;
+            width: 70%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 30%;
+        }
+
+        #profile_pic {
+            background-image: url("components/profilePic.jpg");
+            height: 400px;
+            width: auto;
+        }
+
+        #mission_statement {
+            padding-top: 20px;
+            font-size: 250%;
+        }
+
+        #web-dev-logos {
+            width: 40%;
+            display: block;
+            float: center;
+        }
+
+        #known_aliases {
+            padding-top: 18px;
+            padding-bottom: 20px;
+        }
+
+        /* RESPONSIVE LAYOUT SPECS */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+
+            h1 {
+                font-size: 250%;
+            }
+
+            h2 {
+                font-size: 150%;
+            }
+
+        }
+    </style>
+
 </body>
 
 </html>

@@ -4,28 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin VanDonkelaar Bio - About</title>
+    <title>Kevin VanDonkelaar - About</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
 </head>
 
 <body>
-    <img class="bkd-img"
-        src="https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="color swirls" style="opacity: 0.2">
     <header>
-        <span class="motto">"Learn ~ Create ~ Inspire"</span>
-        <h1 class="name">Kevin VanDonkelaar</h1>
-        <nav class="links">
+        <div class="name">
+            <h1>Kevin VanDonkelaar</h1>
+            <h2>Create ~ Develop ~ Inspire</h2>
+        </div>
+        <nav>
             <a href="index.html">HOME</a>
             <a class='active' href="about.html">ABOUT</a>
             <a href="portfolio.html">PORTFOLIO</a>
+            <a href="#" style="float:right">Link</a>
         </nav>
     </header>
-    <main>
 
+    <main>
+        <section class="leftcolumn">
+            <article id="animated_developer">
+                <h2 id="bio_title">the developer</h2>
+                <h2 class="meta_name">Location:</h2>
+                <p>O'Fallon, MO</p>
+                <h2 class="meta_name">Birthplace:</h2>
+                <p>Greenville, SC</p>
+                <h2 class="meta_name">Favorite GUI:</h2>
+                <p>Android</p>
+                <h2 class="meta_name">Favorite Team:</h2>
+                <p>Clemson Football</p>
+                <h2 class="meta_name">Favorite Movie:</h2>
+                <p>The Matrix</p>
+                <h2 class="meta_name">Favorite Book:</h2>
+                <p>Ender's Game</p>
+            </article>
+        </section>
+        <section class="rightcolumn">
+            <article>
+                <h2>Allies:</h2>
+                <p class="bio_listings">- My super supportive wife and our two brilliant children</p>
+                <p class="bio_listings">- Liz, Edwin, Kavin, and my fellow classmates at Fullstack Academy</p>
+                <p class="bio_listings">- Friends and family in and around my hometown</p>
+            </article>
+            <article>
+                <h2>Superpowers:</h2>
+                <p id="superpowers_list">~creative~ ~analytical~<br>~leader~ ~organized~ ~loyal~<br>~detail-oriented~
+                </p>
+            </article>
+            <article>
+                <h2>Hobbies:</h2>
+                <p class="bio_listings">- Spending time with my amazing family</p>
+                <p class="bio_listings">- Disc Golf, Chess, Puzzles, Legos, SuperHero movies, Books </p>
+                <p class="bio_listings">- Camping, swimming, enjoying the outdoors</p>
+            </article>
+
+        </section>
     </main>
-    <footer class="quote">"Not all those who wander are lost" - J. R. R. Tolkien</footer>
+
+    <footer>
+        <h2 class="quote">"With great power, comes great responsibility." -Stan Lee</h2>
+    </footer>
+
+    <style type=text/css>
+        /* css exclusive to this page */
+        .leftcolumn {
+            float: left;
+            width: 25%;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        #animated_developer {
+            background-image: url("components/animated-developer.png");
+            background-position: top;
+            padding-bottom: 60px;
+        }
+
+        #bio_title {
+            padding-bottom: 150px;
+        }
+
+        .meta_name {
+            padding-top: 10px;
+        }
+
+        .bio_listings {
+            font-size: 200%;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        #superpowers_list {
+            text-align: center;
+            font-size: 350%;
+            padding-top: 5px;
+            padding-bottom: 30px;
+        }
+
+        /* RESPONSIVE LAYOUT SPECS */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+
+            h1 {
+                font-size: 250%;
+            }
+
+            h2 {
+                font-size: 150%;
+            }
+
+        }
+    </style>
+
 </body>
 
 </html>
