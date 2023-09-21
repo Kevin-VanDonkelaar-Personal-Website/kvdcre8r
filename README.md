@@ -1,6 +1,13 @@
 # my-personal-website
 
-Learn - Create - Inspire
+Create - Develop - Inspire
+
+I have adopted these three simple concepts as my motto as I embark on my new career as a web developer. My goal with this website is to display each of these in a tangible way. 
+
+Fist, I used the comic book theme to show some of my personality and display my creativity. Second, I researched techniques and added extra features above the requirements to display my growing ability as a web developer. And lastly, I shared some of my personal info to inspire others.
+
+I hope you enjoy exploring this site as much as I did creating it. Thank you.
+
 
 <!--Block 9: Unit 1 Career Simulation: Personal Website Pt I
 PROJECT REQUIREMENTS
@@ -17,9 +24,7 @@ PROJECT REQUIREMENTS
         e.g., a console.log of a given string
     4. HTML/CSS/JavaScript files submitted via a GitHub repository
 TO-DO LIST
-    - make commit and branch
-    - add content to About and Portfolio pages
-    - add description to Readme file
-    - research comic book fonts and components
-    - learn more about grid in css
+    - add content to Portfolio page
+    - pin header and nav bar
+    - add more comments to html files
 -->

@@ -13,20 +13,23 @@
     <header>
         <div class="name">
             <h1>Kevin VanDonkelaar</h1>
-            <h2>Create ~ Develop ~ Inspire</h2>
+            <h2 id="motto">Create ~ Develop ~ Inspire</h2>
         </div>
         <nav>
             <a href="index.html">HOME</a>
             <a class='active' href="about.html">ABOUT</a>
             <a href="portfolio.html">PORTFOLIO</a>
-            <a href="#" style="float:right">Link</a>
+            <a href="#" style="float:right">kvdcre8r@gmail.com</a>
         </nav>
     </header>
 
     <main>
         <section class="leftcolumn">
+            <article id="page_title">
+                <p>About Me</p>
+            </article>
             <article id="animated_developer">
-                <h2 id="bio_title">the developer</h2>
+                <h2 id="bio_title">"The Developer"</h2>
                 <h2 class="meta_name">Location:</h2>
                 <p>O'Fallon, MO</p>
                 <h2 class="meta_name">Birthplace:</h2>
@@ -79,14 +82,20 @@
             width: 75%;
         }
 
+        #page_title {
+            font-size: 200%;
+            text-align: center;
+        }
+
         #animated_developer {
             background-image: url("components/animated-developer.png");
             background-position: top;
             padding-bottom: 60px;
+            height: 525px;
         }
 
         #bio_title {
-            padding-bottom: 150px;
+            padding-bottom: 100px;
         }
 
         .meta_name {
@@ -114,18 +123,6 @@
                 width: 100%;
                 padding: 0;
             }
-        }
-
-        @media screen and (max-width: 900px) {
-
-            h1 {
-                font-size: 250%;
-            }
-
-            h2 {
-                font-size: 150%;
-            }
-
         }
     </style>
 
