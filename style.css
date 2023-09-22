@@ -151,13 +151,13 @@ footer {
 
 }
 
-@media screen and (max-width: 663.20px) {
+@media (max-width: 663.20px) {
     main {
         margin-top: 320px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
     nav a {
         float: none;
         width: 100%;
