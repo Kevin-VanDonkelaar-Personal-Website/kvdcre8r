@@ -114,7 +114,7 @@ main::after {
 
 article {
     color: #f1f1f1;
-    background-image: url('blue-splash.jpg');
+    background-image: url('components/blue-splash.jpg');
     background-color: darkblue;
     background-position: center;
     background-size: cover;
