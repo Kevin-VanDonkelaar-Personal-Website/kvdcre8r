@@ -58,20 +58,10 @@
 
     <style type=text/css>
         /* css exclusive to this page */
+        /* LEFT COLUMN */
         .leftcolumn {
             float: left;
             width: 70%;
-        }
-
-        .rightcolumn {
-            float: left;
-            width: 30%;
-        }
-
-        #profile_pic {
-            background-image: url("components/profilePic.jpg");
-            height: 400px;
-            width: auto;
         }
 
         #mission_statement {
@@ -85,12 +75,24 @@
             float: center;
         }
 
+        /* RIGHT COLUMN */
+        .rightcolumn {
+            float: right;
+            width: 30%;
+        }
+
+        #profile_pic {
+            background-image: url("components/profilePic.jpg");
+            height: 400px;
+            width: auto;
+        }
+
         #known_aliases {
             padding-top: 18px;
             padding-bottom: 20px;
         }
 
-        /* RESPONSIVE LAYOUT SPECS */
+        /* RESPONSIVE BEHAVIOR */
         @media (max-width: 800px) {
 
             .leftcolumn,
