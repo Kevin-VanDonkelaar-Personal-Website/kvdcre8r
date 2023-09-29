@@ -120,12 +120,12 @@ main::after {
 }
 
 article {
-    color: #f1f1f1;
+    color: white;
     background-image: url('components/blue-splash.jpg');
     background-color: rgb(2, 120, 199);
     background-position: center;
     background-size: cover;
-    border: 2px solid #f1f1f1;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 10px;
     width: auto;
@@ -136,7 +136,7 @@ footer {
     font-family: spyagency;
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: white;
     margin-top: 12px;
     background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
     border-radius: 5px;
@@ -200,7 +200,11 @@ footer {
     }
 
     main {
-        margin-top: 365px;
+        margin-top: 355px;
+    }
+
+    .name {
+        padding: 0px;
     }
 
 }
@@ -215,8 +219,5 @@ footer {
         font-size: 70%;
     }
 
-    .name {
-        padding: 19px 0px 19px 0px;
-    }
 
 }
