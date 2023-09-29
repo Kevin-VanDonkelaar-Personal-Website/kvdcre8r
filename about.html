@@ -19,13 +19,13 @@
             <a href="index.html">HOME</a>
             <a class='active' href="about.html">ABOUT</a>
             <a href="portfolio.html">PORTFOLIO</a>
-            <a href="#" style="float:right">kvdcre8r@gmail.com</a>
+            <a href="contact.html" style="float:right">CONTACT</a>
         </nav>
     </header>
 
     <main>
         <section class="leftcolumn">
-            <article id="page_title">
+            <article class="page_title">
                 <p>About Me</p>
             </article>
             <article id="animated_developer">
@@ -48,7 +48,7 @@
             <article>
                 <h2>Allies:</h2>
                 <p class="bio_listings">- My super supportive wife and our two brilliant children</p>
-                <p class="bio_listings">- Liz, Edwin, Kavin, and my fellow classmates at Fullstack Academy</p>
+                <p class="bio_listings">- My instructor, mentors, and classmates at Fullstack Academy</p>
                 <p class="bio_listings">- Friends and family in and around my hometown</p>
             </article>
             <article>
@@ -82,10 +82,6 @@
             width: 75%;
         }
 
-        #page_title {
-            font-size: 200%;
-            text-align: center;
-        }
 
         #animated_developer {
             background-image: url("components/animated-developer.png");
@@ -116,14 +112,29 @@
         }
 
         /* RESPONSIVE LAYOUT SPECS */
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 875px) {
 
-            .leftcolumn,
-            .rightcolumn {
-                width: 100%;
-                padding: 0;
+            #bio_title {
+                padding-bottom: 80px;
             }
         }
+
+            @media screen and (max-width: 800px) {
+
+                .leftcolumn,
+                .rightcolumn {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            @media (max-width: 493.60px) {
+
+                #superpowers_list {
+                    font-size: 250%;
+                }
+
+            }
     </style>
 
 </body>

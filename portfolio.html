@@ -19,24 +19,24 @@
             <a href="index.html">HOME</a>
             <a href="about.html">ABOUT</a>
             <a class='active' href="portfolio.html">PORTFOLIO</a>
-            <a href="#" style="float:right">kvdcre8r@gmail.com</a>
+            <a href="contact.html" style="float:right">CONTACT</a>
         </nav>
     </header>
 
     <main>
         <section class="leftcolumn">
-            <article id="page_title">
+            <article class="page_title">
                 <p>My Portfolio</p>
             </article>
-            <article>
-                <h2>Projects</h2>
+            <article class="lc_content">
+                <h2 class="lc_headings">Projects</h2>
                 <ol>
                     <li>Zoo page</li>
                     <li>Grocery List</li>
                     <li>The Vault</li>
                     <li>Personal Site</li>
                 </ol>
-                <h2>Relevant Experience</h2>
+                <h2 class="lc_headings">Relevant Experience</h2>
                 <ul>
                     <li>20+ years customer service</li>
                     <li>12+ years in retail management</li>
@@ -44,47 +44,53 @@
                     <li>Merchandising skills</li>
                     <li>Customer relations</li>
                     <li>Employee training and development</li>
-
                 </ul>
             </article>
         </section>
         <section class="centercolumn">
             <article>
-                <h2>1. Zoo Page</h2>
-                <div class="project_contents">
+                <h2 class="project_headings">1. Zoo Page</h2>
+                <div class="center_contents">
                     <img class="images" src="components/Screenshot-Zoo_Page.png"
                         alt="screenshot of my zoo page project">
-                    <p class="portfolio_descs">- My first project. Simple mockup of a zoo's animal guide. Uses basic CSS
+                    <p class="portfolio_descs">- My first project. Simple mockup of a zoo's animal guide. Uses basic
+                        CSS
                         and has multiple external links. </p>
                 </div>
             </article>
             <article>
-                <h2>2. Grocery List</h2>
-                <div class="project_contents">
+                <h2 class="project_headings">2. Grocery List</h2>
+                <div class="center_contents">
                     <img class="images" src="components/Screenshot-Grocery_List.png"
                         alt="screenshot of my grocery list project">
-                    <p class="portfolio_descs">- Organized HTML grocery list demonstrating blocking, unordered lists,
+                    <p class="portfolio_descs">- Organized HTML grocery list demonstrating blocking, unordered
+                        lists,
                         and ordered lists. </p>
                 </div>
             </article>
             <article>
-                <h2>3. The Vault</h2>
-                <div class="project_contents">
+                <h2 class="project_headings">3. The Vault</h2>
+                <div class="center_contents">
                     <img class="images" src="components/Screenshot-The_Vault.png" alt="screenshot of my vault project">
-                    <p class="portfolio_descs">- A simulated cybersercurity vault which uses arithematic equations to
-                        calculate a code sent via a pop-up. </p>
+                    <p class="portfolio_descs">- A simulated cyber-sercurity vault which uses arithematic equations
+                        to
+                        calculate a code sent via dialog box. </p>
                 </div>
             </article>
-
         </section>
         <section class="rightcolumn">
             <article>
-                <h2>4. Personal Website</h2>
-                <img id="website_image" src="components/Screenshot-Personal-Website.png"
-                    alt="screenshot of my personal website project">
-                <p class="portfolio_descs">- This page, which demonstates the skills and techniques I have learned so
-                    far, which include: selectors, colors, backgrounds, borders, margins, padding, box model, responsive
-                    behavior, and much more!</p>
+                <h2 class="project_headings">4. Personal Website</h2>
+                <div class="right_contents">
+                    <img id="website_image" src="components/Screenshot-Personal-Website.png"
+                        alt="screenshot of my personal website project">
+                    <p class="portfolio_descs">- This site, which demonstates the skills and techniques I have
+                        learned
+                        so
+                        far, which include: selectors, colors, backgrounds, borders, margins, padding, box model,
+                        responsive
+                        behavior, forms, drop-downs and much more!</p>
+                </div>
             </article>
         </section>
     </main>
@@ -93,26 +99,22 @@
         <h2 class="quote">"With great power, comes great responsibility." -Stan Lee</h2>
     </footer>
 
+    <!-- css exclusive to this page -->
     <style type=text/css>
-        /* css exclusive to this page */
+        /* LEFT COLUMN */
         .leftcolumn {
             float: left;
             width: 25%;
+            height: 100%;
         }
 
-        .centercolumn {
-            float: left;
-            width: 50%;
+        .lc_headings {
+            margin-bottom: 10px;
         }
 
-        .rightcolumn {
-            float: left;
-            width: 25%;
-        }
-
-        #page_title {
-            font-size: 200%;
-            text-align: center;
+        .lc_content {
+            background-image: none;
+            border: 2px solid;
         }
 
         li {
@@ -121,36 +123,96 @@
 
         ol,
         ul {
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
 
-        .project_contents {
+        /* CENTER COLUMN */
+        .centercolumn {
+            float: left;
+            width: 50%;
+        }
+
+        .center_contents {
             display: inline-flex;
             align-items: center;
+            font-size: 80%;
+            background-color: rgba(2, 120, 199, 0.473);
+            border: 2px solid darkblue;
+            border-radius: 3px;
         }
 
         .images {
             width: 180px;
-            margin: 10px;
-            border: 2px solid;
+            background-color: white;
+            border-radius: 3px;
+            padding: 2px;
+            border: 2px solid darkblue;
+            margin: 2px;
+        }
 
+        /* RIGHT COLUMN */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+        }
+
+        .right_contents {
+            font-size: 90%;
+            background-color: rgba(2, 120, 199, 0.473);
+            border: 2px solid darkblue;
+            border-radius: 3px;
+            padding-bottom: 20%;
         }
 
         #website_image {
-            width: 90%;
-            margin: 10px;
-            border: 2px solid;
+            width: 100%;
+            background-color: darkblue;
+            padding: 1px;
+            border: 2px solid rgb(2, 120, 199);
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
 
+        /* BOTH CENTER AND RIGHT COLUMNS */
+        .project_headings {
+            text-align: center;
+            margin-bottom: 10px;
         }
 
         .portfolio_descs {
-            font-size: 200%;
-            padding-top: 10px;
-            padding-bottom: 5px;
+            font-size: 180%;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
-        /* RESPONSIVE LAYOUT SPECS */
-        @media screen and (max-width: 800px) {
+        /* RESPONSIVE BEHAVIOR */
+        @media screen and (max-width: 1200px) {
+            .page_title {
+                font-size: 160%;
+            }
+
+            li {
+                font-size: 25px;
+            }
+        }
+
+        @media screen and (max-width: 1048px) {
+
+            .centercolumn,
+            .rightcolumn {
+                width: 75%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 826.40px) {
+            li {
+                margin-left: -20px;
+                font-size: 22px;
+            }
+        }
+
+        @media screen and (max-width: 662.40px) {
 
             .leftcolumn,
             .centercolumn,

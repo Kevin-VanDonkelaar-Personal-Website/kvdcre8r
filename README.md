@@ -1,5 +1,7 @@
 # my-personal-website
 
+<!-- CAREER SIMULATION: PERSONAL WEBSITE -->
+
 Create - Develop - Inspire
 
 I have adopted these three simple concepts as my motto as I embark on my new career as a web developer. My goal with this website is to display each of these in a tangible way. 
@@ -9,8 +11,7 @@ Fist, I used the comic book theme to show some of my personality and display my 
 I hope you enjoy exploring this site as much as I did creating it. Thank you.
 
 
-<!--Career Simulation: Personal Website Pt I
-PROJECT REQUIREMENTS
+<!--PART I REQUIREMENTS (Due: 09/21 10:30pm)
     1. GitHub repository, with:
         - More than one branch (including main/master), with descriptive branch name(s)
         - More than one commit, with descriptive commit messages
@@ -23,28 +24,35 @@ PROJECT REQUIREMENTS
     3. A "Hello world" tier Javascript function, loaded via an external file
         - e.g., a console.log of a given string
     4. HTML/CSS/JavaScript files submitted via a GitHub repository
+-->
 
-<!--Career Simulation: Personal Website Pt II
-PROJECT REQUIREMENTS
+<!--PART II REQUIREMENTS (Due: 09/28 07:30pm)
     1. Updated GitHub repository that includes:
         - new commits
-        task board with detailed planning tickets with task descriptions for each one
-    2.  
-    
-An updated website with:
-improved layouts using CSS grid/flex
-proportional units
-dynamic styling with hover effects
-A contact form with the following:
-These specific fields:
-name field
-email field
-message field
-submit button
-The correct attributes is somewhere on the website
-Functionality that when submitted should redirect to another HTML file containing a success message (The form does not need to send a real email when submitted)
-A functioning "submit" button.
+        - task board with detailed planning tickets
+        - task descriptions for each one
+    2. Improved layouts using CSS grid/flex
+        - Use at least one of the following selectors: media queries, nth selectors, hierarchical selectors
+        - Use at least one of the following rules: box-sizing, backgrounds, DOM ordering, z-index, transitions, calc, common shorthands
+    3. Proportional units
+    4. Dynamic styling with hover effects
+    5. A contact form with the following:
+        - name field
+        - email field
+        - message field
+        - submit button
+        - The correct attributes is somewhere on the website
+        - Functionality that when submitted should redirect to another HTML file containing a success message (The form does not need to send a real email when submitted)
+        - A functioning "submit" button.
+-->
 
-TO-DO LIST
-    - add more comments to html files
+<!-- TO-DO LIST (last updated: 09/25 10:15am)
+    - add tickets and descriptions to GitHub task board items
+    - 
+-->
+
+<!-- QUESTIONS
+    - Is there, or can there be, an example of the contact page?
+    - What does "The correct attributes is somewhere on the website" mean in the requirements.
+    - 
 -->
