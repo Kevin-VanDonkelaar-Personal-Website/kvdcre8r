@@ -1,6 +1,11 @@
 /* IMPORTED FONTS */
 @font-face {
     font-family: champion;
+    src: url(components/champion.ttf);
+}
+
+@font-face {
+    font-family: championbold;
     src: url(components/championbold.ttf);
 }
 
