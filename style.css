@@ -17,42 +17,33 @@
 /* APPLIED TO EVERY PAGE BLOCK */
 * {
     box-sizing: border-box;
-    max-width: 1260px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
 /* APPLIED TO BODY AS A WHOLE */
 body {
     background-color: darkblue;
-    border: 10px solid darkblue;
+    border-left: 10px solid darkblue;
+    border-right: 10px solid darkblue;
     margin: 0 auto;
 }
 
 /* HEADER */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
     background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
     font-family: spyagency;
-    padding: 30px;
     text-align: center;
     color: darkblue;
-    border-radius: 15px;
-    border: 10px solid darkblue;
-}
-
-header::after {
-    display: block;
-    clear: both;
-    content: '';
-}
-
-.name {
+    border-radius: 0 0 5px 5px;
+    border: 1px solid white;
     color: darkblue;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    padding-top: 20px;
+}
+
+#motto {
+    margin-bottom: 80px;
 }
 
 h1 {
@@ -71,18 +62,42 @@ p {
 
 /* NAV BAR */
 nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     overflow: hidden;
+    font-family: spyagency;
+    text-align: center;
     background-color: darkblue;
-    border: 2px solid darkblue;
-    border-radius: 5px;
-    margin: 50px -20px -20px -20px;
+    border: 3px solid white;
+    border-radius: 0 0 6px 6px;
+    margin-top: -50px;
 }
+
+nav::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+#scrollfade {
+    position: sticky;
+    top: 53px;
+}
+
+#scrollfade div {
+    background-color: darkblue;
+    height: 1px;
+    margin: 0 3px 0 3px;
+}
+
 
 nav a {
     float: left;
     display: block;
     color: white;
     text-align: center;
+    border: 2px solid darkblue;
     padding: 14px 16px;
     font-size: 16px;
     text-decoration: none;
@@ -109,7 +124,7 @@ main {
     text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
     border: 2px solid white;
     border-radius: 5px;
-    margin-top: 240px;
+    /* margin-top: 15px; */
 }
 
 main::after {
@@ -142,9 +157,9 @@ footer {
     padding: 20px;
     text-align: center;
     background: white;
-    margin-top: 12px;
+    margin-top: 20px;
     background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
