@@ -50,16 +50,6 @@ h1 {
     font-size: 350%;
 }
 
-h2 {
-    color: darkblue;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    font-size: 190%;
-}
-
-p {
-    font-size: 150%;
-}
-
 /* NAV BAR */
 nav {
     position: sticky;
@@ -80,6 +70,7 @@ nav::after {
     clear: both;
     content: '';
 }
+
 #scrollfade {
     position: sticky;
     top: 53px;
@@ -120,23 +111,41 @@ nav a.active:hover {
 /* MAIN CONTENT */
 main {
     background-color: white;
-    font-family: champion;
-    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
-    border: 2px solid white;
     border-radius: 5px;
-    /* margin-top: 15px; */
+    border: 2px solid white;
 }
 
-main::after {
-    /* Clear floats after the columns */
+
+section {
+    margin-top: -70px;
+    padding-top: 70px;
+    font-family: champion;
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+}
+
+section::after {
     content: "";
-    display: table;
+    display: block;
     clear: both;
 }
 
+h2 {
+    color: darkblue;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 190%;
+}
+
+p {
+    font-size: 150%;
+}
+
+
+
 .page_title {
-    font-size: 200%;
+    font-size: 250%;
     text-align: center;
+    color: greenyellow;
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 white, 0 -1px white;
 }
 
 article {
@@ -151,11 +160,100 @@ article {
     width: auto;
 }
 
+/* ORIGIN SECTION */
+#origin-left {
+    float: left;
+    width: 70%;
+}
+
+#mission_statement {
+    padding-top: 20px;
+    font-size: 250%;
+}
+
+#web-dev-logos {
+    width: 40%;
+    display: block;
+    float: center;
+}
+
+#origin-right {
+    float: right;
+    width: 30%;
+}
+
+#profile_pic {
+    background-image: url("components/profilePic.png");
+    height: 400px;
+    width: auto;
+}
+
+#known_aliases {
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+/* BIO SECTION */
+.subnav {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#bio-left {
+    float: left;
+    width: 25%;
+}
+
+#animated_developer {
+    background-image: url("components/animated-developer.png");
+    background-position: top;
+    height: 725px;
+    font-size: 80%;
+}
+
+#bio_title {
+    padding-bottom: 120px;
+}
+
+.meta_name {
+    padding-top: 20px;
+}
+
+.bio_listings {
+    font-size: 200%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#bio-right {
+    float: left;
+    width: 75%;
+}
+
+#superpowers_list {
+    text-align: center;
+    font-size: 350%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+
+/* PORTFOLIO SECTION */
+
+
+/* CONTACT SECTION */
+
+
+/* CONFIRMATION DIALOG */
+
+
 /* FOOTER */
 footer {
     font-family: spyagency;
     padding: 20px;
     text-align: center;
+    color: darkblue;
     background: white;
     margin-top: 20px;
     background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
@@ -175,6 +273,25 @@ footer {
 
     .name {
         padding: 12.5px 0px 12.5px 0px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    #bio_title {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #origin .column {
+        width: 100%;
+        padding: 0;
+    }
+
+    #bio .column {
+        width: 100%;
+        padding: 0;
     }
 }
 
@@ -199,6 +316,12 @@ footer {
 
     footer {
         font-size: 80%
+    }
+}
+
+@media (max-width: 493.60px) {
+    #superpowers_list {
+        font-size: 250%;
     }
 }
 

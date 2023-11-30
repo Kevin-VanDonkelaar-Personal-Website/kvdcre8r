@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin VanDonkelaar Bio - Home</title>
+    <title>Kevin VanDonkelaar Bio - origin</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js" defer></script>
 </head>
@@ -17,10 +17,12 @@
     </header>
 
     <nav>
-        <a class='active' href="index.html">HOME</a>
-        <a href="about.html">ABOUT</a>
+        <a href="index.html"><</a>
+        <a class='active' href="#origin">origin</a>
+        <a href="#bio">bio</a>
         <a href="portfolio.html">PORTFOLIO</a>
         <a href="contact.html" style="float:right">CONTACT</a>
+        <a href="#quote">></a>
     </nav>
     <div id="scrollfade">
         <div style="opacity:0.95"></div>
@@ -46,83 +48,112 @@
     </div>
 
     <main>
-        <section class="leftcolumn">
-            <article>
-                <p>Somewhere near St. Louis, Missouri...<br>this mild-mannered fullstack
-                    developer is ready to save the day,<br>one web solution at a time...</p>
-            </article>
-            <article>
-                <h2>MY MISSION:</h2>
-                <p id="mission_statement">To work with fellow tech professional superheroes to create, develop, and
-                    maintain innovative websites that go above and beyond the client's needs. </p>
-            </article>
-            <article>
-                <h2>My Toolbelt:</h2>
-                <img id="web-dev-logos" src="components/web-dev-logos.png" alt="">
-            </article>
-
-        </section>
-        <section class="rightcolumn">
-            <article id="profile_pic">
-                <h2>Your Hero:</h2>
-            </article>
-            <article id="known_aliases">
-                <h2>Known aliases:</h2>
-                <p>kvdcre8r, kvthinker, mrwordsmith, theorigin8r, cerealkiller478</p>
-            </article>
+        <section id="origin">
+            <div class="column" id="origin-left">
+                <article class="page_title">
+                    Chapter One: Origin Story
+                </article>
+                <article>
+                    <p>Somewhere near St. Louis, Missouri...<br>this mild-mannered fullstack
+                        developer is ready to save the day,<br>one web solution at a time...</p>
+                </article>
+                <article>
+                    <h2>MY MISSION:</h2>
+                    <p id="mission_statement">To work with fellow tech professional superheroes to create, develop, and
+                        maintain innovative websites that go above and beyond the client's needs. </p>
+                </article>
+                <article>
+                    <h2>My Toolbelt:</h2>
+                    <img id="web-dev-logos" src="components/web-dev-logos.png" alt="">
+                </article>
+            </div>
+            <div class="column" id="origin-right">
+                <article id="profile_pic">
+                    <h2>Your Hero:</h2>
+                </article>
+                <article id="known_aliases">
+                    <h2>Known aliases:</h2>
+                    <p>kvdcre8r, kvthinker, mrwordsmith, theorigin8r, cerealkiller478</p>
+                </article>
+            </div>
         </section>
     </main>
 
+    <nav class="subnav">
+        <a href="index.html"><</a>
+        <a href="#origin">origin</a>
+        <a class='active' href="#bio">bio</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html" style="float:right">CONTACT</a>
+        <a href="#quote">></a>
+    </nav>
+    <main>
+        <section id="bio">
+            <div class="column" id="bio-left">
+                <article id="animated_developer">
+                    <h2 id="bio_title">"The Developer"</h2>
+                    <h2 class="meta_name">Location:</h2>
+                    <p>O'Fallon, MO</p>
+                    <h2 class="meta_name">Birthplace:</h2>
+                    <p>Greenville, SC</p>
+                    <h2 class="meta_name">Favorite GUI:</h2>
+                    <p>Android</p>
+                    <h2 class="meta_name">Favorite Teams:</h2>
+                    <p>The Atlanta Braves</p>
+                    <p>Clemson Football</p>
+                    <p>Duke Basketball</p>
+                    <h2 class="meta_name">Favorite Movies:</h2>
+                    <p>The Matrix</p>
+                    <p>The Star Wars Saga</p>
+                    <p>The Princess Bride</p>
+                    <h2 class="meta_name">Favorite Books:</h2>
+                    <p>Ender's Game</p>
+                    <p>The Hobbit</p>
+                    <p>Mistborn</p>
+                    <p>Harry Potter</p>
+                    <p>Percy Jackson</p>
+                </article>
+            </div>
+            <div class="column" id="bio-right">
+                <article class="page_title">
+                    Chapter Two: Biography
+                </article>
+                <article>
+                    <h2>Allies:</h2>
+                    <p class="bio_listings">- My super supportive wife and brilliant children</p>
+                    <p class="bio_listings">- My instructor, mentors, and classmates at Fullstack Academy</p>
+                    <p class="bio_listings">- Friends and family in and around my origintown</p>
+                </article>
+                <article>
+                    <h2>Superpowers:</h2>
+                    <p id="superpowers_list">~creative~ ~analytical~<br>~leader~ ~organized~
+                        ~loyal~<br>~detail-oriented~
+                    </p>
+                </article>
+                <article>
+                    <h2>Hobbies:</h2>
+                    <p class="bio_listings">- Spending time with my amazing family</p>
+                    <p class="bio_listings">- Puzzles, Legos, Disc Golf, Chess, SuperHero movies, Books </p>
+                    <p class="bio_listings">- Camping, swimming, enjoying the outdoors</p>
+                </article>
+
+            </div>
+
+        </section>
+    </main>
+    <main>
+        <section id="portflio">
+
+        </section>
+        <section id="contact">
+
+        </section>
+
+    </main>
+
     <footer>
-        <h2 class="quote">"With great power, comes great responsibility." -Stan Lee</h2>
+        <h3 id="quote">"With great power, comes great responsibility." -Stan Lee</h3>
     </footer>
-
-    <style type=text/css>
-        /* css exclusive to this page */
-        /* LEFT COLUMN */
-        .leftcolumn {
-            float: left;
-            width: 70%;
-        }
-
-        #mission_statement {
-            padding-top: 20px;
-            font-size: 250%;
-        }
-
-        #web-dev-logos {
-            width: 40%;
-            display: block;
-            float: center;
-        }
-
-        /* RIGHT COLUMN */
-        .rightcolumn {
-            float: right;
-            width: 30%;
-        }
-
-        #profile_pic {
-            background-image: url("components/profilePic.png");
-            height: 400px;
-            width: auto;
-        }
-
-        #known_aliases {
-            padding-top: 18px;
-            padding-bottom: 20px;
-        }
-
-        /* RESPONSIVE BEHAVIOR */
-        @media (max-width: 800px) {
-
-            .leftcolumn,
-            .rightcolumn {
-                width: 100%;
-                padding: 0;
-            }
-        }
-    </style>
 
 </body>
 
