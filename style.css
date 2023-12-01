@@ -37,17 +37,17 @@ header {
     color: darkblue;
     border-radius: 0 0 5px 5px;
     border: 1px solid white;
-    color: darkblue;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     padding-top: 20px;
 }
 
-#motto {
-    margin-bottom: 80px;
+h1 {
+    font-size: 250%;
 }
 
-h1 {
-    font-size: 350%;
+header h2 {
+    font-size: 170%;
+    margin-bottom: 80px;
 }
 
 /* NAV BAR */
@@ -59,7 +59,7 @@ nav {
     overflow: hidden;
     font-family: spyagency;
     text-align: center;
-    background-color: darkblue;
+    background-color: rgb(0, 0, 72);
     border: 3px solid white;
     border-radius: 0 0 6px 6px;
     margin-top: -50px;
@@ -82,13 +82,12 @@ nav::after {
     margin: 0 3px 0 3px;
 }
 
-
 nav a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    border: 2px solid darkblue;
+    border: 2px solid rgb(0, 0, 72);
     padding: 14px 16px;
     font-size: 16px;
     text-decoration: none;
@@ -110,15 +109,14 @@ nav a.active:hover {
 
 /* MAIN CONTENT */
 main {
-    background-color: white;
+    background-color: rgb(0, 0, 72);
     border-radius: 5px;
     border: 2px solid white;
 }
 
-
 section {
-    margin-top: -70px;
-    padding-top: 70px;
+    margin-top: -68.5px;
+    padding-top: 68.5px;
     font-family: champion;
     text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
 }
@@ -139,10 +137,8 @@ p {
     font-size: 150%;
 }
 
-
-
-.page_title {
-    font-size: 250%;
+.page_title h2 {
+    font-size: 240%;
     text-align: center;
     color: greenyellow;
     text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 white, 0 -1px white;
@@ -155,7 +151,6 @@ article {
     background-position: center;
     background-size: cover;
     border: 2px solid white;
-    border-radius: 5px;
     padding: 10px;
     width: auto;
 }
@@ -193,13 +188,14 @@ article {
     padding-bottom: 20px;
 }
 
-/* BIO SECTION */
+/* subnav */
 .subnav {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
+/* BIO SECTION */
 #bio-left {
     float: left;
     width: 25%;
@@ -216,7 +212,7 @@ article {
     padding-bottom: 120px;
 }
 
-.meta_name {
+.bio_meta_name {
     padding-top: 20px;
 }
 
@@ -240,12 +236,173 @@ article {
 
 
 /* PORTFOLIO SECTION */
+/* left column */
+#port-left {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.lc_headings {
+    margin-bottom: 10px;
+}
+
+.lc_content {
+    background-image: none;
+    border: 2px solid;
+}
+
+
+li {
+    font-size: 25px;
+}
+
+ol,
+ul {
+    padding-bottom: 30px;
+}
+
+/* center column */
+#port-center {
+    float: left;
+    width: 50%;
+}
+
+.center_contents {
+    display: inline-flex;
+    align-items: center;
+    font-size: 80%;
+    background-color: rgba(0, 0, 139, 0.699);
+    border: 2px solid;
+    border-radius: 3px;
+}
+
+.images {
+    width: 180px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 1px;
+    border: 2px solid darkblue;
+    margin: 2px;
+}
+
+/* right column */
+#port-right {
+    float: left;
+    width: 25%;
+}
+
+.right_contents {
+    font-size: 90%;
+    background-color: rgba(0, 0, 139, 0.699);
+    border: 2px solid;
+    border-radius: 3px;
+    padding-bottom: 20%;
+}
+
+#website_image {
+    width: 100%;
+    background-color: white;
+    padding: 1px;
+    border: 3px solid darkblue;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+/* both center and right columns */
+.project_headings {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.portfolio_descs {
+    font-size: 180%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
 /* CONTACT SECTION */
+/* LEFT COLUMN */
+#more-left {
+    float: left;
+    width: 75%;
+}
 
+#more_info_title {
+    font-size: 250%;
+    padding-bottom: 20px;
+}
 
-/* CONFIRMATION DIALOG */
+form {
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 139, 0.699);
+    padding: 20px;
+}
+
+#form_blocking {
+    display: flex;
+    color: greenyellow;
+    font-family: spyagency;
+    font-size: 70%;
+}
+
+.form_col_heading {
+    text-shadow: -1px 0 greenyellow, 0 1px greenyellow, 1px 0 greenyellow, 0 -1px greenyellow;
+    margin-bottom: .5em;
+}
+
+label {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#submitButton {
+    color: darkblue;
+    background-color: greenyellow;
+    border-radius: 5px;
+    font-family: spyagency;
+    font-size: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: block;
+}
+
+#submitButton:hover {
+    color: greenyellow;
+    background-color: darkblue;
+    border-color: greenyellow;
+}
+
+/* RIGHT COLUMN */
+#more-right {
+    float: left;
+    width: 25%;
+}
+
+#rc_content {
+    background-image: url("components/animated-developer2.png");
+    background-position: top;
+    padding-bottom: 0px;
+    height: 525px;
+}
+
+#rc_title {
+    font-size: 180%;
+    padding-bottom: 150px;
+}
+
+.more_meta_name {
+    padding-top: 30px;
+}
+
+a.more_link {
+    color: white;
+    font-family: champion;
+    font-size: 120%;
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+}
 
 
 /* FOOTER */
@@ -261,52 +418,31 @@ footer {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-/* RESPONSIVE BEHAVIOR */
-@media (max-width: 900px) {
-    h1 {
-        font-size: 246%;
-    }
+@media screen and (max-width: 1048px) {
 
-    #motto {
-        font-size: 135%;
-    }
-
-    .name {
-        padding: 12.5px 0px 12.5px 0px;
-    }
-}
-
-@media screen and (max-width: 875px) {
-    #bio_title {
-        padding-bottom: 80px;
+    #port-center,
+    #port-right {
+        width: 75%;
+        padding: 0;
     }
 }
 
 @media (max-width: 800px) {
 
-    #origin .column {
+    #origin .column,
+    #bio .column,
+    #portfolio .column,
+    #more .column {
         width: 100%;
         padding: 0;
     }
-
-    #bio .column {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media (max-width: 662.40px) {
 
     h1 {
         font-size: 180%;
     }
 
-    #motto {
-        font-size: 100%;
-    }
-
-    .name {
-        padding: 21px 0px 21px 0px;
+    header h2 {
+        font-size: 125%;
     }
 
     nav a {
@@ -317,53 +453,47 @@ footer {
     footer {
         font-size: 80%
     }
-}
-
-@media (max-width: 493.60px) {
-    #superpowers_list {
-        font-size: 250%;
-    }
-}
-
-@media (max-width: 492px) {
-    .name {
-        padding: 6.5px 0px 6.5px 0px;
-    }
 
     #superpowers_list {
         font-size: 250%;
     }
 
+    .page_title h2 {
+        font-size: 200%;
+    }
+
+    #form_blocking {
+        display: grid;
+    }
+
+    .form_col_heading {
+        padding-top: 30px;
+    }
+
+    #scrollfade {
+        position: sticky;
+        top: 50px;
+    }
+
+
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
     nav a {
         width: 50%;
     }
-
-    main {
-        margin-top: 270px;
-    }
-
-    .name {
-        padding: 0px;
-    }
-
-}
-
-@media (max-width: 380px) {
 
     h1 {
         font-size: 135%;
     }
 
-    #motto {
+    header h2 {
         font-size: 70%;
     }
 
-    .name {
-        padding-top: 8.5px;
-        padding-bottom: 8.5px;
+    #scrollfade {
+        position: sticky;
+        top: 95px;
     }
-
+    
 }
