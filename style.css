@@ -72,6 +72,12 @@ nav::after {
     content: '';
 }
 
+.subnav {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 #scrollfade {
     position: sticky;
     top: 53px;
@@ -187,13 +193,6 @@ article {
 #known_aliases {
     padding-top: 18px;
     padding-bottom: 20px;
-}
-
-/* subnav */
-.subnav {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 /* BIO SECTION */
@@ -359,6 +358,11 @@ label {
     margin-bottom: 10px;
 }
 
+input {
+    width: 150px;
+
+}
+
 #submitButton {
     color: darkblue;
     background-color: greenyellow;
@@ -495,7 +499,7 @@ footer {
 
     #scrollfade {
         position: sticky;
-        top: 95px;
+        top: 97px;
     }
 
     .port_center_contents,
