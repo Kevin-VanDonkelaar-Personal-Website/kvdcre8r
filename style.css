@@ -35,10 +35,10 @@ header {
     font-family: spyagency;
     text-align: center;
     color: rgb(0, 0, 72);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     border-radius: 0 0 5px 5px;
     border: 1px solid white;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 h1 {
@@ -47,8 +47,9 @@ h1 {
 
 header h2 {
     font-size: 170%;
-    margin-bottom: 80px;
-    color:  rgb(0, 0, 72);
+    margin-bottom: 85px;
+    color: rgb(0, 0, 72);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 /* NAV BAR */
@@ -162,8 +163,8 @@ article {
     width: auto;
 }
 
-/* ORIGIN SECTION */
-#origin-left {
+/* HOME SECTION */
+#home-left {
     float: left;
     width: 70%;
 }
@@ -179,7 +180,7 @@ article {
     float: center;
 }
 
-#origin-right {
+#home-right {
     float: right;
     width: 30%;
 }
@@ -322,14 +323,14 @@ ul {
 }
 
 
-/* MORE SEECTION */
+/* CONTACT SECTION */
 /* left column */
-#more-left {
+#contact-left {
     float: left;
     width: 75%;
 }
 
-#more_info_title {
+#contact_info_title {
     font-size: 250%;
     padding-bottom: 20px;
 }
@@ -360,28 +361,46 @@ label {
 
 input {
     width: 150px;
-
 }
 
-#submitButton {
+/* confirmation dialog */
+dialog {
+    top: 25%;
+    width: 50%;
+    background-color: darkblue;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+#dialog-content {
+    height: fit-content;
+    font-family: spyagency;
+    font-size: 24px;
+    text-align: center;
+    color: greenyellow;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+button {
     color: darkblue;
     background-color: greenyellow;
     border-radius: 5px;
     font-family: spyagency;
-    font-size: 1.5em;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     display: block;
 }
 
-#submitButton:hover {
+button:hover {
     color: greenyellow;
     background-color: darkblue;
     border-color: greenyellow;
 }
 
 /* RIGHT COLUMN */
-#more-right {
+#contact-right {
     float: left;
     width: 25%;
 }
@@ -398,17 +417,16 @@ input {
     padding-bottom: 150px;
 }
 
-.more_meta_name {
+.contact_meta_name {
     padding-top: 30px;
 }
 
-a.more_link {
+a.contact_link {
     color: white;
     font-family: champion;
     font-size: 120%;
     text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
 }
-
 
 /* FOOTER */
 footer {
@@ -423,7 +441,7 @@ footer {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
- /* RESPONSIVE BEHAVIOR */
+/* RESPONSIVE BEHAVIOR */
 @media screen and (max-width: 1048px) {
 
     #port-center,
@@ -435,10 +453,10 @@ footer {
 
 @media screen and (max-width: 800px) {
 
-    #origin .column,
+    #home .column,
     #bio .column,
     #portfolio .column,
-    #more .column {
+    #contact .column {
         width: 100%;
         padding: 0;
     }
@@ -507,5 +525,19 @@ footer {
         display: block;
         text-align: center;
     }
+
+    section {
+        margin-top: -115px;
+        padding-top: 115px;
+    }
     
+    #dialog-content {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 }
