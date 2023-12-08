@@ -367,7 +367,7 @@ input {
 dialog {
     top: 25%;
     width: 50%;
-    background-color: darkblue;
+    background-color: rgba(0, 0, 139, 0.927);
     border: 2px solid white;
     border-radius: 4px;
 }
@@ -378,6 +378,7 @@ dialog {
     font-size: 24px;
     text-align: center;
     color: greenyellow;
+    text-shadow: -1px 0 rgb(0, 0, 72), 0 1px rgb(0, 0, 72), 1px 0 rgb(0, 0, 72), 0 -1px rgb(0, 0, 72);
     padding: 10px;
     border-radius: 3px;
 }
