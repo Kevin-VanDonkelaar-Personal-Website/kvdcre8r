@@ -1,546 +1,541 @@
 /* IMPORTED FONTS */
 @font-face {
-    font-family: champion;
-    src: url(components/champion.ttf);
+  font-family: champion;
+  src: url(components/champion.ttf);
 }
 
 @font-face {
-    font-family: championbold;
-    src: url(components/championbold.ttf);
+  font-family: championbold;
+  src: url(components/championbold.ttf);
 }
 
 @font-face {
-    font-family: spyagency;
-    src: url(components/spyagency3_2.ttf);
+  font-family: spyagency;
+  src: url(components/spyagency3_2.ttf);
 }
 
 /* APPLIED TO EVERY PAGE BLOCK */
 * {
-    box-sizing: border-box;
-    max-width: 1024px;
-    margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 /* APPLIED TO BODY AS A WHOLE */
 body {
-    background-color: darkblue;
-    border-left: 10px solid  darkblue;
-    border-right: 10px solid  darkblue;
-    margin: 0 auto;
+  background-color: darkblue;
+  border-left: 10px solid darkblue;
+  border-right: 10px solid darkblue;
+  margin: 0 auto;
 }
 
 /* HEADER */
 header {
-    background-image: url("components/blue-pxl-splash.jpg");
-    background-position: center;
-    background-size: cover;
-    font-family: spyagency;
-    text-align: center;
-    color: rgb(0, 0, 72);
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    border-radius: 0 0 5px 5px;
-    border: 3px solid white;
-    padding-top: 30px;
+  background-image: url("components/blue-pxl-splash.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: spyagency;
+  text-align: center;
+  color: rgb(0, 0, 72);
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  border-radius: 0 0 5px 5px;
+  border: 3px solid white;
+  padding-top: 30px;
 }
 
 h1 {
-    font-size: 250%;
+  font-size: 250%;
 }
 
 header h2 {
-    font-size: 170%;
-    margin-bottom: 85px;
-    color: rgb(0, 0, 72);
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-size: 170%;
+  margin-bottom: 85px;
+  color: rgb(0, 0, 72);
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 /* NAV BAR */
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    font-family: spyagency;
-    text-align: center;
-    background-color: rgb(0, 0, 72);
-    border: 3px solid white;
-    border-radius: 0 0 6px 6px;
-    margin-top: -50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  font-family: spyagency;
+  text-align: center;
+  background-color: rgb(0, 0, 72);
+  border: 3px solid white;
+  border-radius: 0 0 6px 6px;
+  margin-top: -50px;
 }
 
 nav::after {
-    display: block;
-    clear: both;
-    content: '';
+  display: block;
+  clear: both;
+  content: "";
 }
 
 .subnav {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #scrollfade {
-    position: sticky;
-    top: 53px;
+  position: sticky;
+  top: 53px;
 }
 
 #scrollfade div {
-    background-color: darkblue;
-    height: 1px;
-    margin: 0 3px 0 3px;
+  background-color: darkblue;
+  height: 1px;
+  margin: 0 3px 0 3px;
 }
 
 nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    border: 2px solid rgb(0, 0, 72);
-    padding: 14px 16px;
-    font-size: 16px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 72);
+  padding: 14px 16px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 nav a.active {
-    color: greenyellow;
+  color: greenyellow;
 }
 
 nav a:hover {
-    background-color: white;
-    color: darkblue;
+  background-color: white;
+  color: darkblue;
 }
 
 nav a.active:hover {
-    color: rgb(142, 212, 35);
-    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+  color: rgb(142, 212, 35);
+  text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
 }
 
 /* MAIN CONTENT */
 main {
-    background-color: rgb(2, 120, 199);
-    border-radius: 5px;
-    border: 2px solid white;
+  background-color: rgb(2, 120, 199);
+  border-radius: 5px;
+  border: 2px solid white;
 }
 
 section {
-    margin-top: -68.5px;
-    padding-top: 68.5px;
-    font-family: champion;
-    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+  margin-top: -68.5px;
+  padding-top: 68.5px;
+  font-family: champion;
+  text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
 }
 
 section::after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 h2 {
-    color: darkblue;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    font-size: 190%;
+  color: darkblue;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-size: 190%;
 }
 
 p {
-    font-size: 150%;
+  font-size: 150%;
 }
 
 .page_title h2 {
-    font-size: 240%;
-    text-align: center;
-    color: greenyellow;
-    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 white, 0 -1px white;
+  font-size: 240%;
+  text-align: center;
+  color: greenyellow;
+  text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 white, 0 -1px white;
 }
 
 article {
-    color: white;
-    background-image: url('components/blue-splash.jpg');
-    background-color: rgb(2, 120, 199);
-    background-position: center;
-    background-size: cover;
-    border: 2px solid white;
-    padding: 10px;
-    width: auto;
+  color: white;
+  background-image: url("components/blue-splash.jpg");
+  background-color: rgb(2, 120, 199);
+  background-position: center;
+  background-size: cover;
+  border: 2px solid white;
+  padding: 10px;
+  width: auto;
 }
 
 /* HOME SECTION */
 #home-left {
-    float: left;
-    width: 70%;
+  float: left;
+  width: 70%;
 }
 
 #mission_statement {
-    padding-top: 20px;
-    font-size: 250%;
+  padding-top: 20px;
+  font-size: 250%;
 }
 
 #web-dev-logos {
-    width: 40%;
-    display: block;
-    float: center;
+  width: 40%;
+  display: block;
+  float: center;
 }
 
 #home-right {
-    float: right;
-    width: 30%;
+  float: right;
+  width: 30%;
 }
 
 #profile_pic {
-    background-image: url("components/profilePic.png");
-    height: 400px;
-    width: auto;
+  background-image: url("components/profilePic.png");
+  height: 400px;
+  width: auto;
 }
 
 #known_aliases {
-    padding-top: 18px;
-    padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 20px;
 }
 
 /* BIO SECTION */
 #bio-left {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
 
 #animated_developer {
-    background-image: url("components/animated-developer.png");
-    background-position: top;
-    height: 725px;
-    font-size: 80%;
+  background-image: url("components/animated-developer.png");
+  background-position: top;
+  height: 725px;
+  font-size: 80%;
 }
 
 #bio_title {
-    padding-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .bio_meta_name {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .bio_listings {
-    font-size: 200%;
-    padding-top: 10px;
-    padding-bottom: 5px;
+  font-size: 200%;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 #bio-right {
-    float: left;
-    width: 75%;
+  float: left;
+  width: 75%;
 }
 
 #superpowers_list {
-    text-align: center;
-    font-size: 350%;
-    padding-top: 5px;
-    padding-bottom: 30px;
+  text-align: center;
+  font-size: 350%;
+  padding-top: 5px;
+  padding-bottom: 30px;
 }
-
 
 /* PORTFOLIO SECTION */
 /* left column */
 #port-left {
-    float: left;
-    width: 25%;
-    height: 100%;
+  float: left;
+  width: 25%;
+  height: 100%;
 }
 
 .lc_headings {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .lc_content {
-    background-image: none;
-    border: 2px solid;
+  background-image: none;
+  border: 2px solid;
 }
 
-
 li {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 ol,
 ul {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 /* center column */
 #port-center {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .port_center_contents {
-    display: inline-flex;
-    align-items: center;
-    font-size: 80%;
-    background-color: rgba(0, 0, 139, 0.699);
-    border: 2px solid;
-    border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 80%;
+  background-color: rgba(0, 0, 139, 0.699);
+  border: 2px solid;
+  border-radius: 3px;
 }
 
 .images {
-    width: 180px;
-    background-color: white;
-    border-radius: 3px;
-    padding: 1px;
-    border: 2px solid darkblue;
-    margin: 2px;
+  width: 180px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 1px;
+  border: 2px solid darkblue;
+  margin: 2px;
 }
 
 /* right column */
 #port-right {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
 
 .port_right_contents {
-    font-size: 90%;
-    background-color: rgba(0, 0, 139, 0.699);
-    border: 2px solid;
-    border-radius: 3px;
-    padding-bottom: 20%;
+  font-size: 90%;
+  background-color: rgba(0, 0, 139, 0.699);
+  border: 2px solid;
+  border-radius: 3px;
+  padding-bottom: 20%;
 }
 
 #website_image {
-    width: 100%;
-    background-color: white;
-    padding: 1px;
-    border: 3px solid darkblue;
-    border-radius: 3px;
-    margin-bottom: 20px;
+  width: 100%;
+  background-color: white;
+  padding: 1px;
+  border: 3px solid darkblue;
+  border-radius: 3px;
+  margin-bottom: 20px;
 }
 
 /* both center and right columns */
 .project_headings {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .portfolio_descs {
-    font-size: 180%;
-    padding-left: 10px;
-    padding-right: 10px;
+  font-size: 180%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
 
 /* CONTACT SECTION */
 /* left column */
 #contact-left {
-    float: left;
-    width: 75%;
+  float: left;
+  width: 75%;
 }
 
 #contact_info_title {
-    font-size: 250%;
-    padding-bottom: 20px;
+  font-size: 250%;
+  padding-bottom: 20px;
 }
 
 form {
-    border: 2px solid;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 139, 0.699);
-    padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 139, 0.699);
+  padding: 20px;
 }
 
 #form_blocking {
-    display: flex;
-    color: greenyellow;
-    font-family: spyagency;
-    font-size: 70%;
+  display: flex;
+  color: greenyellow;
+  font-family: spyagency;
+  font-size: 70%;
 }
 
 .form_col_heading {
-    text-shadow: -1px 0 greenyellow, 0 1px greenyellow, 1px 0 greenyellow, 0 -1px greenyellow;
-    margin-bottom: .5em;
+  text-shadow: -1px 0 greenyellow, 0 1px greenyellow, 1px 0 greenyellow,
+    0 -1px greenyellow;
+  margin-bottom: 0.5em;
 }
 
 label {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 input {
-    width: 150px;
+  width: 150px;
 }
 
 /* confirmation dialog */
 dialog {
-    top: 25%;
-    width: 50%;
-    background-color: rgba(0, 0, 139, 0.927);
-    border: 2px solid white;
-    border-radius: 4px;
+  top: 25%;
+  width: 50%;
+  background-color: rgba(0, 0, 139, 0.927);
+  border: 2px solid white;
+  border-radius: 4px;
 }
 
 #dialog-content {
-    height: fit-content;
-    font-family: spyagency;
-    font-size: 24px;
-    text-align: center;
-    color: greenyellow;
-    text-shadow: -1px 0 rgb(0, 0, 72), 0 1px rgb(0, 0, 72), 1px 0 rgb(0, 0, 72), 0 -1px rgb(0, 0, 72);
-    padding: 10px;
-    border-radius: 3px;
+  height: fit-content;
+  font-family: spyagency;
+  font-size: 24px;
+  text-align: center;
+  color: greenyellow;
+  text-shadow: -1px 0 rgb(0, 0, 72), 0 1px rgb(0, 0, 72), 1px 0 rgb(0, 0, 72),
+    0 -1px rgb(0, 0, 72);
+  padding: 10px;
+  border-radius: 3px;
 }
 
 button {
-    color: darkblue;
-    background-color: greenyellow;
-    border-radius: 5px;
-    font-family: spyagency;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    display: block;
+  color: darkblue;
+  background-color: greenyellow;
+  border-radius: 5px;
+  font-family: spyagency;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 button:hover {
-    color: greenyellow;
-    background-color: darkblue;
-    border-color: greenyellow;
+  color: greenyellow;
+  background-color: darkblue;
+  border-color: greenyellow;
 }
 
 /* RIGHT COLUMN */
 #contact-right {
-    float: left;
-    width: 25%;
+  float: left;
+  width: 25%;
 }
 
 #rc_content {
-    background-image: url("components/animated-developer2.png");
-    background-position: top;
-    padding-bottom: 0px;
-    height: 525px;
+  background-image: url("components/animated-developer2.png");
+  background-position: top;
+  padding-bottom: 0px;
+  height: 525px;
 }
 
 #rc_title {
-    font-size: 180%;
-    padding-bottom: 150px;
+  font-size: 180%;
+  padding-bottom: 150px;
 }
 
 .contact_meta_name {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 a.contact_link {
-    color: white;
-    font-family: champion;
-    font-size: 120%;
-    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+  color: white;
+  font-family: champion;
+  font-size: 120%;
+  text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
 }
 
 /* FOOTER */
 footer {
-    font-family: spyagency;
-    padding: 20px;
-    text-align: center;
-    color: darkblue;
-    background: white;
-    margin-top: 20px;
-    background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
-    border-radius: 5px 5px 0 0;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-family: spyagency;
+  padding: 20px;
+  text-align: center;
+  color: darkblue;
+  background: white;
+  margin-top: 20px;
+  background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
+  border-radius: 5px 5px 0 0;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 /* RESPONSIVE BEHAVIOR */
 @media screen and (max-width: 1048px) {
-
-    #port-center,
-    #port-right {
-        width: 75%;
-        padding: 0;
-    }
+  #port-center,
+  #port-right {
+    width: 75%;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  #home .column,
+  #bio .column,
+  #portfolio .column,
+  #contact .column {
+    width: 100%;
+    padding: 0;
+  }
 
-    #home .column,
-    #bio .column,
-    #portfolio .column,
-    #contact .column {
-        width: 100%;
-        padding: 0;
-    }
+  h1 {
+    font-size: 180%;
+  }
 
-    h1 {
-        font-size: 180%;
-    }
+  header h2 {
+    font-size: 125%;
+  }
 
-    header h2 {
-        font-size: 125%;
-    }
+  nav a {
+    font-size: 12px;
+    padding: 15px;
+  }
 
-    nav a {
-        font-size: 12px;
-        padding: 15px;
-    }
+  footer {
+    font-size: 80%;
+  }
 
-    footer {
-        font-size: 80%
-    }
+  #superpowers_list {
+    font-size: 250%;
+  }
 
-    #superpowers_list {
-        font-size: 250%;
-    }
+  .page_title h2 {
+    font-size: 200%;
+  }
 
-    .page_title h2 {
-        font-size: 200%;
-    }
+  #form_blocking {
+    display: grid;
+  }
 
-    #form_blocking {
-        display: grid;
-    }
+  .form_col_heading {
+    padding-top: 30px;
+  }
 
-    .form_col_heading {
-        padding-top: 30px;
-    }
-
-    #scrollfade {
-        position: sticky;
-        top: 50px;
-    }
-
-
+  #scrollfade {
+    position: sticky;
+    top: 50px;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    nav a {
-        width: 50%;
-    }
+  nav a {
+    width: 50%;
+  }
 
-    h1 {
-        font-size: 135%;
-    }
+  h1 {
+    font-size: 135%;
+  }
 
-    header h2 {
-        font-size: 70%;
-    }
+  header h2 {
+    font-size: 70%;
+  }
 
-    #scrollfade {
-        position: sticky;
-        top: 97px;
-    }
+  #scrollfade {
+    position: sticky;
+    top: 97px;
+  }
 
-    .port_center_contents,
-    .port_right_contents {
-        display: block;
-        text-align: center;
-    }
+  .port_center_contents,
+  .port_right_contents {
+    display: block;
+    text-align: center;
+  }
 
-    section {
-        margin-top: -115px;
-        padding-top: 115px;
-    }
-    
-    #dialog-content {
-        font-size: 16px;
-    }
+  section {
+    margin-top: -115px;
+    padding-top: 115px;
+  }
 
-    button {
-        font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
+  #dialog-content {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
