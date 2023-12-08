@@ -24,20 +24,22 @@
 /* APPLIED TO BODY AS A WHOLE */
 body {
     background-color: darkblue;
-    border-left: 10px solid darkblue;
-    border-right: 10px solid darkblue;
+    border-left: 10px solid  darkblue;
+    border-right: 10px solid  darkblue;
     margin: 0 auto;
 }
 
 /* HEADER */
 header {
-    background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-darkblue-white-pixelated-noise_497399-1518.jpg?w=1380");
+    background-image: url("components/blue-pxl-splash.jpg");
+    background-position: center;
+    background-size: cover;
     font-family: spyagency;
     text-align: center;
     color: rgb(0, 0, 72);
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     border-radius: 0 0 5px 5px;
-    border: 1px solid white;
+    border: 3px solid white;
     padding-top: 30px;
 }
 
