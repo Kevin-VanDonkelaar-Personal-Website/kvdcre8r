@@ -26,7 +26,7 @@
 
 /* HEADER */
 header {
-  background-image: url("components/blue-pxl-splash.jpg");
+  background-image: url("items/blue-pxl-splash.jpg");
   background-position: center;
   background-size: cover;
   border: var(--border);
@@ -114,7 +114,7 @@ main {
 
   article {
     background-color: var(--section-color);
-    background-image: url("components/blue-splash.jpg");
+    background-image: url("items/blue-splash.jpg");
     background-position: center;
     background-size: cover;
     border: var(--border);
@@ -228,7 +228,7 @@ main {
 
     #profile_pic {
       background-color: rgba(0, 0, 0, 0);
-      background-image: url("components/profilePic.png");
+      background-image: url("items/profilePic.png");
       background-position-y: 0;
       border: none;
       border-radius: 0;
@@ -325,7 +325,7 @@ main {
     width: 25%;
 
     #animated_developer {
-      background-image: url("components/animated-developer.png");
+      background-image: url("items/animated-developer.png");
       background-position-y: 1em;
       border: none;
       box-shadow: none;
@@ -605,7 +605,7 @@ main {
   }
 
   #rc_content {
-    background-image: url("components/animated-developer2.png");
+    background-image: url("items/animated-developer2.png");
     background-position: top;
     padding-bottom: 0px;
     height: 525px;
@@ -637,7 +637,9 @@ footer {
   color: var(--body-color);
   background: var(--border-color);
   margin-top: 20px;
-  background-image: url("https://img.freepik.com/premium-vector/grunge-halftone-texture-comic-book-style-spots-drops-dirty-var(--body-color)-var(--border-color)-pixelated-noise_497399-1518.jpg?w=1380");
+  background-image: url("items/blue-pxl-splash.jpg");
+  background-size: cover;
+  background-position: center;
   border-radius: 5px 5px 0 0;
   text-shadow: var(--text-outline);
 }
@@ -645,12 +647,12 @@ footer {
 /* IMPORTED FONTS */
 @font-face {
   font-family: champion;
-  src: url(components/champion.ttf);
+  src: url(items/champion.ttf);
 }
 
 @font-face {
   font-family: spyagency;
-  src: url(components/spyagency3_2.ttf);
+  src: url(items/spyagency3_2.ttf);
 }
 
 /* RESPONSIVE BEHAVIOR */
