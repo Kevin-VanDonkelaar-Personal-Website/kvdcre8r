@@ -5,18 +5,21 @@
 
   /* VARIABLES */
   /* colors */
-  --body-color: navy;
+  --body-color: rgb(0, 0, 72);
   --border-color: ivory;
-  --header-color: rgb(0, 0, 72);
+  --header-color: navy;
   --section-color: rgb(2, 120, 199);
   --text-color: white;
   /* borders */
   --border: 2px solid var(--border-color);
   --border-thin: 1px solid var(--border-color);
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  --text-outline: -.5px 0 var(--text-color), 0 .5px var(--text-color), .5px 0 var(--text-color), 0 -.5px var(--text-color);
-  --text-outline-light: -1px 0 var(--section-color), 0 1px var(--section-color), 1px 0 var(--section-color), 0 -1px var(--section-color);
-  --text-outline-dark: -1px 0 var(--header-color), 0 1px var(--header-color), 1px 0 var(--header-color), 0 -1px var(--header-color);
+  --text-outline: -0.5px 0 var(--text-color), 0 0.5px var(--text-color),
+    0.5px 0 var(--text-color), 0 -0.5px var(--text-color);
+  --text-outline-light: -1px 0 var(--section-color), 0 1px var(--section-color),
+    1px 0 var(--section-color), 0 -1px var(--section-color);
+  --text-outline-dark: -1px 0 var(--header-color), 0 1px var(--header-color),
+    1px 0 var(--header-color), 0 -1px var(--header-color);
 
   body {
     background-color: var(--body-color);
@@ -32,7 +35,9 @@ header {
   border: var(--border);
   color: var(--header-color);
   font-family: spyagency;
-  margin-bottom: -3px;
+  border-radius: 0 0 5px 5px;
+
+  /* margin-bottom: -3px; */
   padding: 30px 0 40px 0;
   text-align: center;
   text-shadow: var(--text-outline);
@@ -55,10 +60,11 @@ nav {
   overflow: hidden;
   position: sticky;
 
-  background-color: var(--header-color);
-  border: var(--border);
-  border-radius: 0 0 6px 6px;
-  box-shadow: var(--box-shadow);
+  background-color: var(--body-color);
+  border: var(--body-color);
+  /* border-radius: 0 0 6px 6px; */
+  /* box-shadow: var(--box-shadow); */
+  border: 2px solid var(--body-color);
   font-family: spyagency;
   margin-bottom: 15px;
   text-align: center;
@@ -67,7 +73,7 @@ nav {
     display: block;
     float: left;
 
-    border: 2px solid var(--header-color);
+    /* border: 2px solid var(--header-color); */
     color: var(--border-color);
     font-size: 16px;
     padding: 14px 16px;
@@ -75,13 +81,14 @@ nav {
     text-decoration: none;
   }
 
-  .active {
-    color: var(--feature-color-pt2);
-  }
-
   :hover {
     background-color: var(--border-color);
     color: var(--header-color);
+  }
+
+  .active {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
   }
 
   .active:hover {
@@ -93,6 +100,20 @@ nav {
 .subnav {
   margin: 15px 0;
   width: 100%;
+  border: 2px solid var(--body-color);
+
+  a {
+    border: none;
+  }
+
+  .active {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+  }
+
+  .inactive {
+    opacity: 0;
+  }
 }
 
 /* MAIN CONTENT */
@@ -139,13 +160,14 @@ main {
     text-shadow: var(--text-outline-dark);
     text-wrap: balance;
   }
-
 }
 
 /* HOME SECTION */
 #home {
   --feature-color-pt1: rgb(255, 149, 0);
-  --text-outline-feature-pt1: -1px 0 var(--feature-color-pt1), 0 1px var(--feature-color-pt1), 1px 0 var(--feature-color-pt1), 0 -1px var(--feature-color-pt1);
+  --text-outline-feature-pt1: -1px 0 var(--feature-color-pt1),
+    0 1px var(--feature-color-pt1), 1px 0 var(--feature-color-pt1),
+    0 -1px var(--feature-color-pt1);
 
   #left_hc {
     float: left;
@@ -156,7 +178,6 @@ main {
     }
 
     #narration {
-
       p {
         font-size: 25px;
         text-align: left;
@@ -188,7 +209,6 @@ main {
         font-size: 200%;
         text-wrap: balance;
       }
-
     }
 
     #mission {
@@ -219,7 +239,6 @@ main {
         padding: 15px;
       }
     }
-
   }
 
   #right_hc {
@@ -258,7 +277,6 @@ main {
       margin-left: 0;
 
       h3 {
-
         font-size: 28px;
         padding-bottom: 5px;
         text-shadow: var(--text-outline);
@@ -316,9 +334,12 @@ main {
 }
 
 /* BIO SECTION */
+
 #bio {
   --feature-color-pt2: rgb(70, 251, 70);
-  --text-outline-feature-pt2: -1px 0 var(--feature-color-pt2), 0 1px var(--feature-color-pt2), 1px 0 var(--feature-color-pt2), 0 -1px var(--feature-color-pt2);
+  --text-outline-feature-pt2: -1px 0 var(--feature-color-pt2),
+    0 1px var(--feature-color-pt2), 1px 0 var(--feature-color-pt2),
+    0 -1px var(--feature-color-pt2);
 
   #left_bc {
     float: left;
@@ -363,7 +384,6 @@ main {
     }
 
     #narration {
-
       p {
         font-size: 25px;
         text-align: left;
@@ -381,7 +401,6 @@ main {
     #superpowers {
       color: var(--body-color);
       text-shadow: var(--text-outline-feature-pt2);
-
       margin: 30px;
       padding-bottom: 35px;
       text-align: center;
@@ -425,36 +444,52 @@ main {
         padding: 15px;
       }
     }
-
   }
 }
 
 /* PORTFOLIO SECTION */
 #portfolio {
+  --feature-color-pt3: rgb(255, 136, 156);
+  --text-outline-feature-pt3: -1px 0 var(--feature-color-pt3),
+    0 1px var(--feature-color-pt3), 1px 0 var(--feature-color-pt3),
+    0 -1px var(--feature-color-pt3);
 
   /* left column */
   #port-left {
     float: left;
     width: 25%;
     height: 100%;
-  }
 
-  .lc_headings {
-    margin-bottom: 10px;
-  }
+    .part_three {
+      color: var(--feature-color-pt3);
+      font-size: 120%;
+    }
 
-  .lc_content {
-    background-image: none;
-    border: 2px solid;
-  }
+    .lc_headings {
+      margin-bottom: 10px;
+    }
 
-  li {
-    font-size: 25px;
-  }
+    .lc_content {
+      background-image: none;
+      border: 2px solid;
+    }
 
-  ol,
-  ul {
-    padding-bottom: 30px;
+    li {
+      font-size: 25px;
+    }
+
+    ol {
+      padding-bottom: 30px;
+
+      li {
+        color: var(--body-color);
+        text-shadow: var(--text-outline-feature-pt3);
+  
+      }
+    }
+    ul {
+      padding-bottom: 30px;
+    }
   }
 
   /* center column */
@@ -462,6 +497,12 @@ main {
     float: left;
     width: 50%;
   }
+
+  .project_headings {
+    color: var(--body-color);
+    text-shadow: var(--text-outline-feature-pt3);
+
+}
 
   .port_center_contents {
     display: inline-flex;
@@ -519,14 +560,26 @@ main {
 
 /* CONTACT SECTION */
 #contact {
+  --feature-color-pt4: yellow;
+  --text-outline-feature-pt4: -1px 0 var(--feature-color-pt4),
+    0 1px var(--feature-color-pt4), 1px 0 var(--feature-color-pt4),
+    0 -1px var(--feature-color-pt4);
 
   /* left column */
+.part_four {
+  color: var(--feature-color-pt4);
+}
+
   #contact-left {
     float: left;
     width: 75%;
   }
 
   #contact_info_title {
+    color: var(--body-color);
+    text-shadow: var(--text-outline-feature-pt4);
+
+
     font-size: 250%;
     padding-bottom: 20px;
   }
@@ -558,6 +611,10 @@ main {
 
   input {
     width: 150px;
+  }
+
+  #show-alert {
+    color: var(--feature-color-pt4);
   }
 
   /* confirmation dialog */
@@ -657,7 +714,6 @@ footer {
 
 /* RESPONSIVE BEHAVIOR */
 @media screen and (max-width: 1024px) {
-
   #port-center,
   #port-right {
     width: 75%;
@@ -686,7 +742,6 @@ footer {
   }
 
   #home {
-
     #left_hc,
     #right_hc {
       width: 100%;
@@ -711,7 +766,6 @@ footer {
   }
 
   #bio {
-
     #left_bc,
     #right_bc {
       width: 100%;
