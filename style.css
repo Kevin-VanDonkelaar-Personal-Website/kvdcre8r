@@ -62,8 +62,6 @@ nav {
 
   background-color: var(--body-color);
   border: var(--body-color);
-  /* border-radius: 0 0 6px 6px; */
-  /* box-shadow: var(--box-shadow); */
   border: 2px solid var(--body-color);
   font-family: spyagency;
   margin-bottom: 15px;
@@ -109,10 +107,6 @@ nav {
   .active {
     border-top: 2px solid;
     border-bottom: 2px solid;
-  }
-
-  .inactive {
-    opacity: 0;
   }
 }
 
@@ -333,9 +327,9 @@ main {
   }
 }
 
-/* BIO SECTION */
+/* ABOUT SECTION */
 
-#bio {
+#about {
   --feature-color-pt2: rgb(70, 251, 70);
   --text-outline-feature-pt2: -1px 0 var(--feature-color-pt2),
     0 1px var(--feature-color-pt2), 1px 0 var(--feature-color-pt2),
@@ -484,7 +478,6 @@ main {
       li {
         color: var(--body-color);
         text-shadow: var(--text-outline-feature-pt3);
-  
       }
     }
     ul {
@@ -501,8 +494,7 @@ main {
   .project_headings {
     color: var(--body-color);
     text-shadow: var(--text-outline-feature-pt3);
-
-}
+  }
 
   .port_center_contents {
     display: inline-flex;
@@ -566,9 +558,9 @@ main {
     0 -1px var(--feature-color-pt4);
 
   /* left column */
-.part_four {
-  color: var(--feature-color-pt4);
-}
+  .part_four {
+    color: var(--feature-color-pt4);
+  }
 
   #contact-left {
     float: left;
@@ -578,7 +570,6 @@ main {
   #contact_info_title {
     color: var(--body-color);
     text-shadow: var(--text-outline-feature-pt4);
-
 
     font-size: 250%;
     padding-bottom: 20px;
@@ -765,7 +756,7 @@ footer {
     }
   }
 
-  #bio {
+  #about {
     #left_bc,
     #right_bc {
       width: 100%;
