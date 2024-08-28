@@ -575,7 +575,15 @@ main {
     padding-bottom: 20px;
   }
 
-  form {
+  p {
+    font-size: 2.25rem;
+    text-wrap: balance;
+    margin: 70px;
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+  /* form {
     border: 2px solid;
     border-radius: 5px;
     background-color: rgba(0, 0, 139, 0.699);
@@ -608,7 +616,6 @@ main {
     color: var(--feature-color-pt4);
   }
 
-  /* confirmation dialog */
   dialog {
     top: 25%;
     width: 50%;
@@ -644,7 +651,7 @@ main {
     color: var(--feature-color-pt2);
     background-color: var(--body-color);
     border-color: var(--feature-color-pt2);
-  }
+  } */
 
   /* RIGHT COLUMN */
   #contact-right {
@@ -656,12 +663,12 @@ main {
     background-image: url("items/animated-developer2.png");
     background-position: top;
     padding-bottom: 0px;
-    height: 525px;
+    height: 425px;
   }
 
   #rc_title {
     font-size: 180%;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
   }
 
   .contact_meta_name {
@@ -688,6 +695,7 @@ footer {
   background-image: url("items/blue-pxl-splash.jpg");
   background-size: cover;
   background-position: center;
+  border: var(--border);
   border-radius: 5px 5px 0 0;
   text-shadow: var(--text-outline);
 }
@@ -705,11 +713,12 @@ footer {
 
 /* RESPONSIVE BEHAVIOR */
 @media screen and (max-width: 1024px) {
+  #portfolio{
   #port-center,
   #port-right {
     width: 75%;
     padding: 0;
-  }
+  }}
 }
 
 @media (max-width: 800px) {
@@ -728,6 +737,10 @@ footer {
     padding: 15px;
   }
 
+  .subnav {
+    padding-bottom: 50px;
+  }
+
   .page_title {
     font-size: 200%;
   }
@@ -741,7 +754,7 @@ footer {
 
     #right_hc {
       #profile_pic {
-        height: 400px;
+        height: 600px;
         width: auto;
         margin: 0px 0px 0px 0px;
 
@@ -764,9 +777,29 @@ footer {
     }
 
     #right_bc {
-      #superpowers_list {
-        font-size: 250%;
+      #superpowers {
+        h2 {
+          font-size: 275%;
+        }
+        h3 {
+          font-size: 200%;
+        }
       }
+    }
+  }
+
+  #portfolio {
+    #port-left,
+    #port-center,
+    #port-right {
+      width: 100%;
+    }
+  }
+
+  #contact {
+    #contact-left,
+    #contact-right {
+      width: 100%;
     }
   }
 
@@ -803,25 +836,56 @@ footer {
     padding-top: 115px;
   }
 
-  #home #left_hc {
-    #narration {
-      h2 {
-        font-size: 195%;
-      }
+  #home {
+    #left_hc {
+      #narration {
+        h2 {
+          font-size: 195%;
+        }
 
-      h3 {
-        width: 205px;
+        h3 {
+          width: 205px;
+        }
+      }
+      #featured-content{
+        h2 {
+          font-size: 260%;
+        }
+        h3 {
+          font-size: 150%;
+        }
       }
     }
   }
 
-  .port_center_contents,
-  .port_right_contents {
-    display: block;
-    text-align: center;
+  #about {
+    #right_bc {
+      #superpowers {
+        h2 {
+          font-size: 210%;
+        }
+        h3 {
+          font-size: 150%;
+        }
+      }
+    }
   }
 
-  #dialog-content {
+  #portfolio {
+    .port_center_contents,
+    .port_right_contents {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  #contact {
+    p {
+      margin: 40px;
+    }
+  }
+
+  /* #dialog-content {
     font-size: 16px;
   }
 
@@ -829,5 +893,5 @@ footer {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 10px;
-  }
+  } */
 }
