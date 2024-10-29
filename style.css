@@ -136,7 +136,7 @@ main {
     border-radius: 3px;
     box-shadow: var(--box-shadow);
     color: var(--text-color);
-    font-family: champion;
+    font-family: monospace;
     margin: 10px;
     padding: 10px;
     text-shadow: var(--text-outline-dark);
@@ -169,11 +169,12 @@ main {
 
     .part_one {
       color: var(--feature-color-pt1);
+      background-color: var(--section-color);
     }
 
     #narration {
       p {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
         border: 1px solid var(--feature-color-pt2);
         color: var(--text-color);
@@ -189,6 +190,7 @@ main {
     #featured-content {
       color: var(--body-color);
       text-shadow: var(--text-outline-feature-pt1);
+      font-family: champion;
 
       margin: 30px;
       padding-bottom: 35px;
@@ -211,7 +213,6 @@ main {
       border-radius: 3px;
       border: 1px solid var(--body-color);
       color: var(--text-color);
-      font-family: spyagency;
       padding: 20px;
       margin: 18px 2em;
 
@@ -251,6 +252,8 @@ main {
       margin: 10px 10px 0 -50px;
 
       h2 {
+        font-family: champion;
+
         color: var(--section-color);
         font-size: 40px;
         margin-left: 50px;
@@ -260,6 +263,7 @@ main {
     }
 
     #known_aliases {
+      font-family: champion;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       border: none;
@@ -268,7 +272,6 @@ main {
       color: var(--section-color);
       display: flex;
       align-items: center;
-      margin-left: 0;
 
       h3 {
         font-size: 28px;
@@ -285,6 +288,7 @@ main {
     }
 
     #toolbelt {
+      font-family: champion;
       color: var(--section-color);
       background-color: var(--section-color);
       background-image: none;
@@ -379,7 +383,7 @@ main {
 
     #narration {
       p {
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
         border: 1px solid var(--feature-color-pt2);
         color: var(--text-color);
@@ -393,6 +397,7 @@ main {
     }
 
     #superpowers {
+      font-family: champion;
       color: var(--body-color);
       text-shadow: var(--text-outline-feature-pt2);
       margin: 30px;
@@ -416,9 +421,8 @@ main {
       border-radius: 3px;
       border: 1px solid var(--body-color);
       color: var(--text-color);
-      font-family: spyagency;
       padding: 20px;
-      margin: 18px 2em;
+      margin: 18px;
 
       h3 {
         background-color: var(--section-color);
@@ -435,7 +439,7 @@ main {
         text-wrap: pretty;
         font-size: 18px;
         font-weight: 50;
-        padding: 15px;
+        padding: 10px;
       }
     }
   }
@@ -447,6 +451,11 @@ main {
   --text-outline-feature-pt3: -1px 0 var(--feature-color-pt3),
     0 1px var(--feature-color-pt3), 1px 0 var(--feature-color-pt3),
     0 -1px var(--feature-color-pt3);
+    background-color: var(--section-color);
+    background-image: url("items/blue-splash.jpg");
+    background-position: center;
+    background-size: cover;
+
 
   /* left column */
   #port-left {
@@ -457,6 +466,7 @@ main {
     .part_three {
       color: var(--feature-color-pt3);
       font-size: 120%;
+      background-image: none;
     }
 
     .lc_headings {
@@ -469,7 +479,7 @@ main {
     }
 
     li {
-      font-size: 25px;
+      font-size: 20px;
     }
 
     ol {
@@ -489,6 +499,10 @@ main {
   #port-center {
     float: left;
     width: 50%;
+
+    article {
+      background-image: none;
+    }
   }
 
   .project_headings {
@@ -499,7 +513,7 @@ main {
   .port_center_contents {
     display: inline-flex;
     align-items: center;
-    font-size: 80%;
+    font-size: .7em;
     background-color: rgba(0, 0, 139, 0.699);
     border: 2px solid;
     border-radius: 3px;
@@ -514,14 +528,20 @@ main {
     margin: 2px;
   }
 
+  .portfolio_descs {
+    font-family: monospace;
+    padding: 5px 0px;
+  }
+
   /* right column */
   #port-right {
     float: left;
     width: 25%;
+    background-image: none;
   }
 
   .port_right_contents {
-    font-size: 90%;
+    font-size: .8em;
     background-color: rgba(0, 0, 139, 0.699);
     border: 2px solid;
     border-radius: 3px;
@@ -547,6 +567,10 @@ main {
     font-size: 180%;
     padding-left: 10px;
     padding-right: 10px;
+
+    details {
+      z-index: 1;
+    }
   }
 }
 
@@ -576,7 +600,8 @@ main {
   }
 
   p {
-    font-size: 2.25rem;
+    font-family: champion;
+    font-size: 2.25em;
     text-wrap: balance;
     margin: 70px;
     padding-bottom: 35px;
@@ -677,8 +702,7 @@ main {
 
   a.contact_link {
     color: var(--border-color);
-    font-family: champion;
-    font-size: 120%;
+    font-size: 1.2em;
     text-shadow: -1px 0 var(--body-color), 0 1px var(--body-color),
       1px 0 var(--body-color), 0 -1px var(--body-color);
   }
