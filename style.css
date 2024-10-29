@@ -169,7 +169,6 @@ main {
 
     .part_one {
       color: var(--feature-color-pt1);
-      background-color: var(--section-color);
     }
 
     #narration {
@@ -451,10 +450,6 @@ main {
   --text-outline-feature-pt3: -1px 0 var(--feature-color-pt3),
     0 1px var(--feature-color-pt3), 1px 0 var(--feature-color-pt3),
     0 -1px var(--feature-color-pt3);
-    background-color: var(--section-color);
-    background-image: url("items/blue-splash.jpg");
-    background-position: center;
-    background-size: cover;
 
 
   /* left column */
@@ -467,6 +462,7 @@ main {
       color: var(--feature-color-pt3);
       font-size: 120%;
       background-image: none;
+      background-color: var(--section-color);
     }
 
     .lc_headings {
@@ -537,7 +533,9 @@ main {
   #port-right {
     float: left;
     width: 25%;
-    background-image: none;
+    article {
+      background-image: none;
+    }
   }
 
   .port_right_contents {
