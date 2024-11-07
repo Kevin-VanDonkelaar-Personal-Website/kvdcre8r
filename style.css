@@ -451,7 +451,6 @@ main {
     0 1px var(--feature-color-pt3), 1px 0 var(--feature-color-pt3),
     0 -1px var(--feature-color-pt3);
 
-
   /* left column */
   #port-left {
     float: left;
@@ -476,17 +475,16 @@ main {
 
     li {
       font-size: 20px;
+      color: rgb(255, 166, 181);
+      text-shadow: var(--text-outline-feature-dark);
+      list-style-type: square;
     }
 
-    ol {
+    #project_list {
       padding-bottom: 30px;
-
-      li {
-        color: var(--body-color);
-        text-shadow: var(--text-outline-feature-pt3);
-      }
     }
-    ul {
+
+    #exp_list {
       padding-bottom: 30px;
     }
   }
@@ -494,80 +492,52 @@ main {
   /* center column */
   #port-center {
     float: left;
-    width: 50%;
-
-    article {
-      background-image: none;
-    }
+    width: 75%;
   }
 
   .project_headings {
-    color: var(--body-color);
-    text-shadow: var(--text-outline-feature-pt3);
+    color: var(--feature-color-pt3);
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .port_center_contents {
     display: inline-flex;
-    align-items: center;
-    font-size: .7em;
-    background-color: rgba(0, 0, 139, 0.699);
-    border: 2px solid;
-    border-radius: 3px;
+    font-size: 0.7em;
   }
 
   .images {
-    width: 180px;
+    width: 350px;
     background-color: var(--border-color);
     border-radius: 3px;
     padding: 1px;
     border: 2px solid var(--body-color);
-    margin: 2px;
+    margin: 10px;
   }
 
   .portfolio_descs {
     font-family: monospace;
     padding: 5px 0px;
-  }
-
-  /* right column */
-  #port-right {
-    float: left;
-    width: 25%;
-    article {
-      background-image: none;
-    }
-  }
-
-  .port_right_contents {
-    font-size: .8em;
-    background-color: rgba(0, 0, 139, 0.699);
-    border: 2px solid;
-    border-radius: 3px;
-    padding-bottom: 20%;
-  }
-
-  #website_image {
-    width: 100%;
-    background-color: var(--border-color);
-    padding: 1px;
-    border: 3px solid var(--body-color);
-    border-radius: 3px;
-    margin-bottom: 20px;
-  }
-
-  /* both center and right columns */
-  .project_headings {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .portfolio_descs {
     font-size: 180%;
     padding-left: 10px;
     padding-right: 10px;
 
     details {
       z-index: 1;
+    }
+  }
+
+  article {
+    background-image: none;
+    background-color: rgba(0, 0, 139, 0.699);
+
+    a {
+      color: inherit;
+    }
+
+    p {
+      padding: 10px;
     }
   }
 }
@@ -735,12 +705,19 @@ footer {
 
 /* RESPONSIVE BEHAVIOR */
 @media screen and (max-width: 1024px) {
-  #portfolio{
-  #port-center,
-  #port-right {
-    width: 75%;
-    padding: 0;
-  }}
+  #portfolio {
+    #port-center,
+    #port-right {
+      width: 75%;
+      padding: 0;
+    }
+    #port-left {
+      li {
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 800px) {
@@ -838,6 +815,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 650px) {
+  #port-center {
+    .port_center_contents {
+      display: block;
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
   header {
     h1 {
@@ -869,7 +854,7 @@ footer {
           width: 205px;
         }
       }
-      #featured-content{
+      #featured-content {
         h2 {
           font-size: 260%;
         }

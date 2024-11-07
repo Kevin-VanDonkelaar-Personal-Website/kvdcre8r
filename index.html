@@ -147,14 +147,13 @@
         <h2 class="page_title part_three">Part Three: Portfolio</h2>
         <article class="lc_content">
           <h2 class="lc_headings">Projects</h2>
-          <ol>
+          <ul id="project_list">
             <li>My Live Resume</li>
-            <li>Grocery List</li>
-            <li>The Vault</li>
             <li>Personal Site</li>
-          </ol>
+            <li>Resume Builer</li>
+          </ul>
           <h2 class="lc_headings">Relevant Experience</h2>
-          <ul>
+          <ul id="exp_list">
             <li>20+ years customer service</li>
             <li>12+ years in retail management</li>
             <li>Leadership training</li>
@@ -169,8 +168,9 @@
           <h2 class="project_headings"> My Live Resume</h2>
           <div class="port_center_contents">
             <img class="images" src="items/Screenshot-My-Live-Resume-2.png"
-              alt="screenshot of my personal website project" />
+              alt="screenshot of my live resume project" />
             <div class="portfolio_descs">
+              <a href="https://github.com/kvdcre8r/my_react_resume">Github Link</a>
               <p>
                 Interactive resume webpage meticulously crafted to highlight the journey and skills of an aspiring web
                 developer
@@ -187,13 +187,10 @@
             </div>
           </div>
         </article>
-
-      </div>
-      <div class="column" id="port-right">
         <article>
-          <h2 class="project_headings">My Personal Website</h2>
-          <div class="port_right_contents">
-            <img id="website_image" src="items/Screenshot-My-Personal-Site.png"
+          <h2 class="project_headings">Personal Site</h2>
+          <div class="port_center_contents">
+            <img class="images" src="items/Screenshot-My-Personal-Site.png"
               alt="screenshot of my personal website project" />
             <div class="portfolio_descs">
               <p>Personal brand website demonstrating the knowledge and skills necessary for success in web development
@@ -214,6 +211,29 @@
             </div>
           </div>
         </article>
+        <article>
+          <h2 class="project_headings">Resume Builder</h2>
+          <div class="port_center_contents">
+            <img class="images" src="items/Screenshot-Resume-Builder.png"
+              alt="screenshot of my personal website project" />
+            <div class="portfolio_descs">
+              <p>Current project in development, a resume builder application that will allow users to create and
+                customize their own resumes
+              </p>
+              <details>
+                <ul>
+                  <li>Recieves user input and dynamically generates a resume based on the information provided
+                  </li>
+                  <li>Allows users to customize the layout, style, and content of their resume
+                  </li>
+                  <li>Will feature the ability to save, print, and export resumes in various formats
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>
