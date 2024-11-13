@@ -509,6 +509,7 @@ main {
 
   .images {
     width: 350px;
+    height: 250px;
     background-color: var(--border-color);
     border-radius: 3px;
     padding: 1px;
