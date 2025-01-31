@@ -1,14 +1,14 @@
-# my-personal-website
+# Kevin VanDonkelaar: The Super Developer
 
-<!-- CAREER SIMULATION: PERSONAL WEBSITE -->
+This was the first version of my personal website. I developed it using HTML and CSS. The most recent version can be found here: 
 
-Create - Develop - Inspire
+## Create - Develop - Inspire
 
-I have adopted these three simple concepts as my motto as I embark on my new career as a web developer. My goal with this website is to display each of these in a tangible way. 
+#### I have adopted these three simple concepts as my motto as I embark on my new career as a web developer. My goal with this website is to display each of these in a tangible way. 
 
-First, I used the comic book theme to show some of my personality and display my creativity. Second, I researched techniques and added extra features above the requirements to display my growing ability as a web developer. And lastly, I shared some of my personal info to inspire others.
+#### First, I used the comic book theme to show some of my personality and display my creativity. Second, I researched techniques and added extra features above the requirements to display my growing ability as a web developer. And lastly, I shared some of my personal info to inspire others.
 
-I hope you enjoy exploring this site as much as I did creating it. Thank you.
+#### I hope you enjoy exploring this site as much as I did creating it. Thank you.
 
 
 <!--PART I REQUIREMENTS (Due: 09/21 10:30pm)
@@ -36,12 +36,4 @@ I hope you enjoy exploring this site as much as I did creating it. Thank you.
         - Use at least one of the following rules: box-sizing, backgrounds, DOM ordering, z-index, transitions, calc, common shorthands
     3. Proportional units
     4. Dynamic styling with hover effects
-    5. A contact form with the following:
-        - name field
-        - email field
-        - message field
-        - submit button
-        - The correct attributes is somewhere on the website
-        - Functionality that when submitted should redirect to another HTML file containing a success message (The form does not need to send a real email when submitted)
-        - A functioning "submit" button.
 -->
