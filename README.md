@@ -1,14 +1,8 @@
 # Kevin VanDonkelaar: The Super Developer
 
-This was the first version of my personal website. I developed it using HTML and CSS. The most recent version can be found [here](https://the-super-developer.netlify.app/).
+This was the first version of my personal website. It is hosted [here](https://kevin-vandonkelaar-personal-website.github.io/kvdcre8r/). I developed it using HTML and CSS. The most recent version can be found [here](https://the-super-developer.netlify.app/).
 
-## Create - Develop - Inspire
-
-#### I have adopted these three simple concepts as my motto as I embark on my new career as a web developer. My goal with this website is to display each of these in a tangible way. 
-
-#### First, I used the comic book theme to show some of my personality and display my creativity. Second, I researched techniques and added extra features above the requirements to display my growing ability as a web developer. And lastly, I shared some of my personal info to inspire others.
-
-#### I hope you enjoy exploring this site as much as I did creating it. Thank you.
+I hope you enjoy exploring this site as much as I did creating it. Thank you!
 
 
 <!--PART I REQUIREMENTS (Due: 09/21 10:30pm)
